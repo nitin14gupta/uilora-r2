@@ -1,0 +1,183 @@
+import { getCode } from "../getCode";
+import { Component } from "../types";
+
+export const tabComponents: Component[] = [
+    {
+        id: "highlight",
+        name: "Highlight Follower",
+        description: "Tabs with animated highlight that follows the active tab.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["tabs", "highlight", "follower", "animated"],
+        previewUrl: "/SpecialElements/Tabs/Highlight",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Tabs/tsx/TabsHighlight.tsx"),
+            jsx: getCode("src/components/SpecialElements/Tabs/jsx/TabsHighlight.jsx"),
+        },
+        usageCode: {
+            tsx: getCode("src/app/(routes)/SpecialElements/Tabs/Highlight/page.tsx")
+        },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [
+            { name: "tabs", type: "TabItem[]", default: "[{id: '1', label: 'Home'}, ...]", description: "Array of tab items with id and label." },
+            { name: "defaultActive", type: "string", default: "tabs[0]?.id", description: "ID of the initially active tab." },
+            { name: "backgroundColor", type: "string", default: "transparent", description: "Background color of the component (hex, rgb, or hsl)." },
+            { name: "containerBgColor", type: "string", default: "#f4f4f5", description: "Background color of the container (hex, rgb, or hsl)." },
+            { name: "containerPadding", type: "string", default: "0.25rem", description: "Padding of the container (CSS value)." },
+            { name: "containerBorderRadius", type: "string", default: "9999px", description: "Border radius of the container (CSS value)." },
+            { name: "activeIndicatorBgColor", type: "string", default: "#ffffff", description: "Background color of the active indicator (hex, rgb, or hsl)." },
+            { name: "activeIndicatorShadowColor", type: "string", default: "rgba(0,0,0,0.05)", description: "Shadow color of the active indicator (hex, rgb, or hsl)." },
+            { name: "activeTextColor", type: "string", default: "#000000", description: "Text color of active tabs (hex, rgb, or hsl)." },
+            { name: "inactiveTextColor", type: "string", default: "#52525b", description: "Text color of inactive tabs (hex, rgb, or hsl)." },
+            { name: "hoverTextColor", type: "string", default: "#000000", description: "Text color of tabs on hover (hex, rgb, or hsl)." },
+            { name: "buttonPadding", type: "string", default: "0.5rem 1.5rem", description: "Padding of tab buttons (CSS value)." },
+            { name: "fontSize", type: "string", default: "0.875rem", description: "Font size of tab labels (CSS value)." },
+            { name: "fontWeight", type: "string", default: "500", description: "Font weight of tab labels (CSS value)." },
+        ],
+        whenToUse: "Excellent for dashboard settings, navigation menus, and Next.js applications that want a classic premium 'Highlight' aesthetic. Use this tab system to provide clear, tactile feedback during section switching.",
+        bestPractices: "Maintain consistent spacing within your design system by keeping the tabs balanced. Follow React best practices by pairing this with sharp, technical typography. Optimize for performance by using efficient layout-id transitions.",
+        whyMatters: "Highlight-follower animations communicate digital excellence, precision, and modern craft. This production-ready UI template helpsคุณ build an interface that feels responsive and organized, adding a unique 'Moving' signature to your brand navigation.",
+        faqs: [
+            { question: "How does the indicator move?", answer: "The component uses localized x-offsets and layout-id transitions to move the active background between tabs, creating a high-fidelity 'opening' effect." },
+            { question: "Can I adjust the speed?", answer: "Absolutely, you can customize the Framer Motion transition properties to adjust both the damping and stiffness of the background animation." },
+            { question: "Is it mobile responsive?", answer: "The tab buttons and indicator scales adapt for mobile, ensuring the navigation remains impactful and structural on small screens." }
+        ],
+    },
+    {
+        id: "glassa",
+        name: "Glass Floating",
+        description: "Glassmorphism tabs with floating effect.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["tabs", "glass", "floating", "glassmorphism"],
+        previewUrl: "/SpecialElements/Tabs/Glass",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Tabs/tsx/TabsGlass.tsx"),
+            jsx: getCode("src/components/SpecialElements/Tabs/jsx/TabsGlass.jsx"),
+        },
+        usageCode: {
+            tsx: getCode("src/app/(routes)/SpecialElements/Tabs/Glass/page.tsx")
+        },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [
+            { name: "tabs", type: "TabItem[]", default: "[{id: '1', label: 'Option 1'}, ...]", description: "Array of tab items with id and label." },
+            { name: "backgroundImage", type: "string", default: "url", description: "Background image URL for the container." },
+            { name: "defaultActive", type: "number", default: "0", description: "Index of the initially active tab." },
+            { name: "backgroundColor", type: "string", default: "transparent", description: "Background color of the component (hex, rgb, or hsl)." },
+            { name: "containerHeight", type: "string", default: "16rem", description: "Height of the container (CSS value)." },
+            { name: "containerWidth", type: "string", default: "100%", description: "Width of the container (CSS value)." },
+            { name: "containerMaxWidth", type: "string", default: "28rem", description: "Maximum width of the container (CSS value)." },
+            { name: "borderRadius", type: "string", default: "1rem", description: "Border radius of the container (CSS value)." },
+            { name: "buttonBgColor", type: "string", default: "transparent", description: "Background color of tab buttons (hex, rgb, or hsl)." },
+            { name: "buttonHoverBgColor", type: "string", default: "rgba(255,255,255,0.2)", description: "Background color of buttons on hover (hex, rgb, or hsl)." },
+            { name: "buttonTextColor", type: "string", default: "#ffffff", description: "Text color of tab buttons (hex, rgb, or hsl)." },
+            { name: "activeIndicatorBgColor", type: "string", default: "rgba(255,255,255,0.3)", description: "Background color of the active indicator (hex, rgb, or hsl)." },
+            { name: "buttonBorderRadius", type: "string", default: "9999px", description: "Border radius of buttons (CSS value)." },
+            { name: "buttonPadding", type: "string", default: "0.5rem 1rem", description: "Padding of tab buttons (CSS value)." },
+            { name: "fontSize", type: "string", default: "0.75rem", description: "Font size of tab labels (CSS value)." },
+            { name: "fontWeight", type: "string", default: "bold", description: "Font weight of tab labels (CSS value)." },
+        ],
+        whenToUse: "Ideal for high-end digital agencies, creative portfolios, and Next.js applications that want a premium 'Floating Glass' aesthetic. Use these tabs for an immersive experience with blur effects and light refraction cues.",
+        bestPractices: "Maintain consistent spacing within your design system by keeping the tab items organized. Follow React best practices by pairing this with soft, neutral colors. Optimize for performance by managed the amount of blur renders.",
+        whyMatters: "Glass-based aesthetics communicate digital excellence, sophistication, and high-end craft. This production-ready UI template helpsคุณ build an interface that feels curated and premium, leaving a lasting visual impression on high-value clients.",
+        faqs: [
+            { question: "Is the 'Glass' effect real?", answer: "The component uses localized backdrop-filter blur and subtle inner glows (glass-shadows) to simulate light refraction through high-fidelity translucent surfaces." },
+            { question: "Can I change the backdrop?", answer: "Absolutely, both the primary 'backgroundColor' (gradient or solid) and the persistent blur intensity are fully configurable to match your digital brand." },
+            { question: "Is it mobile responsive?", answer: "The floating tabs adapt their spans and layouts for mobile, ensuring the refractive narrative remains impactful and legible on small screens." }
+        ],
+    },
+    {
+        id: "image",
+        name: "Image Backed",
+        description: "Tabs with background images that change on selection.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["tabs", "image", "background", "animated"],
+        previewUrl: "/SpecialElements/Tabs/Image",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Tabs/tsx/TabsImage.tsx"),
+            jsx: getCode("src/components/SpecialElements/Tabs/jsx/TabsImage.jsx"),
+        },
+        usageCode: {
+            tsx: getCode("src/app/(routes)/SpecialElements/Tabs/Image/page.tsx")
+        },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [
+            { name: "tabs", type: "TabItem[]", default: "[{id: '1', label: 'Scene 1', image?: url}, ...]", description: "Array of tab items with id, label, and optional image." },
+            { name: "images", type: "string[]", default: "[url1, url2, ...]", description: "Fallback array of image URLs if tabs don't have images." },
+            { name: "defaultActive", type: "number", default: "0", description: "Index of the initially active tab." },
+            { name: "backgroundColor", type: "string", default: "transparent", description: "Background color of the component (hex, rgb, or hsl)." },
+            { name: "containerBgColor", type: "string", default: "#18181b", description: "Background color of the container (hex, rgb, or hsl)." },
+            { name: "containerHeight", type: "string", default: "10rem", description: "Height of the container (CSS value)." },
+            { name: "containerWidth", type: "string", default: "100%", description: "Width of the container (CSS value)." },
+            { name: "containerMaxWidth", type: "string", default: "32rem", description: "Maximum width of the container (CSS value)." },
+            { name: "borderRadius", type: "string", default: "1.5rem", description: "Border radius of the container (CSS value)." },
+            { name: "imageOpacity", type: "number", default: "0.5", description: "Opacity of background images (0-1)." },
+            { name: "activeButtonBgColor", type: "string", default: "#ffffff", description: "Background color of active buttons (hex, rgb, or hsl)." },
+            { name: "activeButtonTextColor", type: "string", default: "#000000", description: "Text color of active buttons (hex, rgb, or hsl)." },
+            { name: "activeButtonScale", type: "number", default: "1.1", description: "Scale of active buttons." },
+            { name: "inactiveButtonTextColor", type: "string", default: "rgba(255,255,255,0.7)", description: "Text color of inactive buttons (hex, rgb, or hsl)." },
+            { name: "inactiveButtonHoverTextColor", type: "string", default: "#ffffff", description: "Text color of inactive buttons on hover (hex, rgb, or hsl)." },
+            { name: "buttonBorderRadius", type: "string", default: "9999px", description: "Border radius of buttons (CSS value)." },
+            { name: "buttonPadding", type: "string", default: "0.5rem 1.5rem", description: "Padding of tab buttons (CSS value)." },
+            { name: "fontSize", type: "string", default: "1rem", description: "Font size of tab labels (CSS value)." },
+            { name: "fontWeight", type: "string", default: "bold", description: "Font weight of tab labels (CSS value)." },
+            { name: "transitionDuration", type: "number", default: "0.3", description: "Duration of image transitions in seconds." },
+        ],
+        whenToUse: "Perfect for media-heavy blogs, cinematics archives, and Next.js platforms that want a high-tech 'Image-Backed' aesthetic. Use these tabs to communicate hierarchical power and digital intelligence through background image swaps.",
+        bestPractices: "Maintain scalable component architecture by pairing this with high-contrast imagery. Follow React best practices by using Framer Motion for the image reveal transitions. Optimize for performance by managed the image opacity.",
+        whyMatters: "Image-enhanced layouts communicate technical authority, sophistication, and digital craft. This production-ready UI template helpsคุณ build an interface that feels organized and high-end, adding a unique 'Corporate' signatures to your brand selection.",
+        faqs: [
+            { question: "How work image swaps?", answer: "The component features localized absolute positioning and opacity transitions to smoothly cross-fade the background images when tabs are selected, creating a high-fidelity 'opening' effect." },
+            { question: "Are colors dynamic?", answer: "Yes, both the primary 'activeButtonBgColor' and background glows can be adjusted to create 'Industrial' or 'Cyber' agency effects." },
+            { question: "Is it mobile responsive?", answer: "The tab buttons and background scales adapt for mobile, ensuring the bold narrative remains impactful and structural on small screens." }
+        ],
+    },
+    {
+        id: "swipe",
+        name: "Swipe (Mobile)",
+        description: "Mobile-optimized swipeable tabs with smooth transitions.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["tabs", "swipe", "mobile", "gesture"],
+        previewUrl: "/SpecialElements/Tabs/Swipe",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Tabs/tsx/TabsSwipe.tsx"),
+            jsx: getCode("src/components/SpecialElements/Tabs/jsx/TabsSwipe.jsx"),
+        },
+        usageCode: {
+            tsx: getCode("src/app/(routes)/SpecialElements/Tabs/Swipe/page.tsx")
+        },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [
+            { name: "tabs", type: "TabItem[]", default: "[{id: '1', label: 'View 1', content: '...'}, ...]", description: "Array of tab items with id, label, and optional content." },
+            { name: "defaultActive", type: "number", default: "0", description: "Index of the initially active tab." },
+            { name: "backgroundColor", type: "string", default: "transparent", description: "Background color of the component (hex, rgb, or hsl)." },
+            { name: "containerBgColor", type: "string", default: "#ffffff", description: "Background color of the container (hex, rgb, or hsl)." },
+            { name: "containerBorderColor", type: "string", default: "#e4e4e7", description: "Border color of the container (hex, rgb, or hsl)." },
+            { name: "containerBorderRadius", type: "string", default: "0.75rem", description: "Border radius of the container (CSS value)." },
+            { name: "containerMaxWidth", type: "string", default: "28rem", description: "Maximum width of the container (CSS value)." },
+            { name: "headerBorderColor", type: "string", default: "#f4f4f5", description: "Border color of the header section (hex, rgb, or hsl)." },
+            { name: "activeTabTextColor", type: "string", default: "#2563eb", description: "Text color of active tabs (hex, rgb, or hsl)." },
+            { name: "inactiveTabTextColor", type: "string", default: "#a1a1aa", description: "Text color of inactive tabs (hex, rgb, or hsl)." },
+            { name: "tabPadding", type: "string", default: "1rem", description: "Padding of tab buttons (CSS value)." },
+            { name: "tabFontSize", type: "string", default: "0.875rem", description: "Font size of tab labels (CSS value)." },
+            { name: "tabFontWeight", type: "string", default: "600", description: "Font weight of tab labels (CSS value)." },
+            { name: "contentBgColor", type: "string", default: "transparent", description: "Background color of content area (hex, rgb, or hsl)." },
+            { name: "contentTextColor", type: "string", default: "#71717a", description: "Text color of content area (hex, rgb, or hsl)." },
+            { name: "contentHeight", type: "string", default: "10rem", description: "Height of content area (CSS value)." },
+            { name: "contentPadding", type: "string", default: "2rem", description: "Padding of content area (CSS value)." },
+            { name: "springStiffness", type: "number", default: "300", description: "Spring animation stiffness." },
+            { name: "springDamping", type: "number", default: "30", description: "Spring animation damping." },
+        ],
+        whenToUse: "Excellent for mobile-first applications, interactive touch interfaces, and Next.js platforms that want an organic 'Swipe' aesthetic. Use these tabs to save space while maintaining extreme accessibility through swipe gestures.",
+        bestPractices: "Maintain scalable component architecture by pairing this with sharp, technical icons. Follow React best practices by using Framer Motion for the gesture physics. Optimize for performance by managed the content renders.",
+        whyMatters: "Swipe-based animations communicate digital flow, efficiency, and modern craft. This production-ready UI template helpsคุณ build an interface that feels responsive and organized, adding a unique 'Moving' signature to your brand.",
+        faqs: [
+            { question: "How does 'Swipe' work?", answer: "The component uses localized x-offsets and spring physics to 'slide' the content views as users swipe across the interface, creating a high-fidelity 'opening' effect." },
+            { question: "Are colors dynamic?", answer: "Absolutely, you can adjust both the primary `backgroundColor` and specific highlight colors to match your brand's specific high-intensity palette." },
+            { question: "Is it mobile responsive?", answer: "The swipe threshold and typographic scales adapt for mobile, ensuring the gesture narrative remains impactful and structural on small screens." }
+        ],
+    }
+];
+

@@ -1,0 +1,52 @@
+import { Component } from "../types";
+
+export const buttonComponentsMetadata: Component[] = [
+    {
+        id: "uilora-modern-buttons",
+        name: "Uilora Modern Buttons",
+        description: "A premium collection of 12 modern SaaS buttons, featuring Spotlight, Border Beam, physics-based Magnetic interactions, and the Uilora flagship brand button.",
+        category: "UI Components",
+        installType: "cli",
+        tags: ["button", "modern", "saas", "glow", "spotlight"],
+        previewUrl: "/UIComponents/Button/Modern",
+        code: { tsx: "" },
+        usageCode: { tsx: "" },
+        dependencies: ["lucide-react", "framer-motion", "clsx", "tailwind-merge"],
+    },
+    {
+        id: "uilora-action-buttons",
+        name: "Uilora Action Buttons",
+        description: "Specialized action buttons featuring Rocket launches, Printer effects, Shatter text, and Confetti celebrations.",
+        category: "UI Components",
+        installType: "cli",
+        tags: ["button", "action", "rocket", "printer", "confetti"],
+        previewUrl: "/UIComponents/Button/Action",
+        code: { tsx: "" },
+        usageCode: { tsx: "" },
+        dependencies: ["lucide-react", "framer-motion"],
+    },
+    {
+        id: "uilora-interactive-buttons",
+        name: "Uilora Interactive Buttons",
+        description: "Playful and interactive buttons including Paper Plane, Watchful Eyes, and the Runaway button.",
+        category: "UI Components",
+        installType: "cli",
+        tags: ["button", "interactive", "fun", "eye-tracking", "send"],
+        previewUrl: "/UIComponents/Button/Interactive",
+        code: { tsx: "" },
+        usageCode: { tsx: "" },
+        dependencies: ["lucide-react", "framer-motion"],
+    },
+    {
+        id: "uilora-utility-buttons",
+        name: "Uilora Utility Buttons",
+        description: "Practical utility buttons like the Command Copy button and the Neon Underglow status button.",
+        category: "UI Components",
+        installType: "cli",
+        tags: ["button", "utility", "copy", "neon", "status"],
+        previewUrl: "/UIComponents/Button/Utility",
+        code: { tsx: "" },
+        usageCode: { tsx: "" },
+        dependencies: ["lucide-react"],
+    }
+];

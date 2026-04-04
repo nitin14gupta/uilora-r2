@@ -1,0 +1,216 @@
+import { getCode } from "../getCode";
+import { Component } from "../types";
+
+export const videoPlayerComponents: Component[] = [
+    {
+        id: "player-glass",
+        name: "Glass",
+        description: "Glassmorphism video player with blur effects.",
+        category: "Media",
+        installType: "cli",
+        tags: ["video", "player", "glass", "blur"],
+        previewUrl: "/Media/VideoPlayers/PlayerGlass",
+        code: {
+            tsx: getCode("src/components/Media/VideoPlayers/tsx/PlayerGlass.tsx"),
+            jsx: getCode("src/components/Media/VideoPlayers/jsx/PlayerGlass.jsx")
+        },
+        usageCode: { tsx: getCode("src/app/(routes)/Media/VideoPlayers/PlayerGlass/page.tsx") },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [
+            { name: "video", type: "string", default: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", description: "Video source URL." },
+            { name: "backgroundColor", type: "string", default: "#0f172a", description: "Background color (hex, rgb, or hsl)." },
+            { name: "progressGradientFrom", type: "string", default: "#8b5cf6", description: "Progress bar gradient start color (hex, rgb, or hsl)." },
+            { name: "progressGradientTo", type: "string", default: "#ec4899", description: "Progress bar gradient end color (hex, rgb, or hsl)." },
+        ],
+        whenToUse: "Excellent for high-end digital agencies, award-winning portfolios, and Next.js platforms that want a premium 'Glassmorphism' aesthetic. Use this video player for an immersive experience with blur effects and light refraction cues.",
+        bestPractices: "Follow React best practices by pairing this with high-contrast, bold imagery. Maintain consistent spacing within your design system by keeping the UI cards centered. Optimize for performance by managed the amount of blur renders.",
+        whyMatters: "Glass-based aesthetics communicate digital excellence, sophistication, and high-end craft. This production-ready UI template helpsคุณ build an interface that feels curated and premium, leaving a lasting visual impression on high-value clients.",
+        faqs: [
+            { question: "Is the blur real?", answer: "The component uses localized backdrop-filter blur and subtle inner glows (glass-shadows) to simulate light refraction through high-fidelity translucent surfaces." },
+            { question: "Can I adjust gradients?", answer: "Absolutely, you can customize both the primary `progressGradientFrom` and `progressGradientTo` colors to match your digital brand's specific intensity." },
+            { question: "Is it mobile responsive?", answer: "The glass cards and playback bars adapt their spans and layouts for mobile, ensuring the refractive narrative remains impactful and legible on small screens." }
+        ],
+    },
+    {
+        id: "player-brutalist",
+        name: "Brutalist",
+        description: "Neo-brutalist frame video player with high contrast.",
+        category: "Media",
+        installType: "cli",
+        tags: ["video", "player", "brutalist", "contrast"],
+        previewUrl: "/Media/VideoPlayers/PlayerBrutalist",
+        code: {
+            tsx: getCode("src/components/Media/VideoPlayers/tsx/PlayerBrutalist.tsx"),
+            jsx: getCode("src/components/Media/VideoPlayers/jsx/PlayerBrutalist.jsx")
+        },
+        usageCode: { tsx: getCode("src/app/(routes)/Media/VideoPlayers/PlayerBrutalist/page.tsx") },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [
+            { name: "video", type: "string", default: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", description: "Video source URL." },
+            { name: "backgroundColor", type: "string", default: "#ffffff", description: "Background color (hex, rgb, or hsl)." },
+            { name: "borderColor", type: "string", default: "#000000", description: "Border color (hex, rgb, or hsl)." },
+            { name: "buttonColor", type: "string", default: "#000000", description: "Button background color (hex, rgb, or hsl)." },
+            { name: "labelText", type: "string", default: "VIDEO", description: "Label text displayed above video." },
+            { name: "playText", type: "string", default: "PLAY", description: "Play button text." },
+            { name: "pauseText", type: "string", default: "PAUSE", description: "Pause button text." },
+        ],
+        whenToUse: "Ideal for edgy streetwear brands, experimental art portfolios, and Next.js applications that want an energetic 'Brutalist' aesthetic. Use this video player to showcase project collections with a high-intensity, industrial 'Raw' vibe.",
+        bestPractices: "Maintain consistent spacing within your design system by using it for aggressive brand storytelling. Follow React best practices by pairing it with bold, technical typography. Optimize for performance by managed the border intensity.",
+        whyMatters: "Bold brutalist aesthetics communicate power, mystery, and structural honesty. This production-ready UI template helpsคุณ build an interface that feels authoritative and solid, breaking the 'standard' web layout rules.",
+        faqs: [
+            { question: "Why 'Brutalist'?", answer: "The component features thick borders, high-contrast black/white paths, and sharp shadows to simulate the raw structural honesty of the brutalist architectural movement." },
+            { question: "Can I adjust colors?", answer: "Yes, both the primary 'backgroundColor' and the specific 'buttonColor' are fully configurable, allowing you to create 'Cyber' or 'Industrial' pop effects." },
+            { question: "Is it mobile responsive?", answer: "The heavy borders and typographic scales adapt dynamically for mobile, Ensuring the bold narrative remains impactful and structural on small screens." }
+        ],
+    },
+    {
+        id: "player-cinematic",
+        name: "Cinematic",
+        description: "Cinematic widescreen video player with noir aesthetics.",
+        category: "Media",
+        installType: "cli",
+        tags: ["video", "player", "cinematic", "widescreen"],
+        previewUrl: "/Media/VideoPlayers/PlayerCinematic",
+        code: {
+            tsx: getCode("src/components/Media/VideoPlayers/tsx/PlayerCinematic.tsx"),
+            jsx: getCode("src/components/Media/VideoPlayers/jsx/PlayerCinematic.jsx")
+        },
+        usageCode: { tsx: getCode("src/app/(routes)/Media/VideoPlayers/PlayerCinematic/page.tsx") },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [
+            { name: "video", type: "string", default: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", description: "Video source URL." },
+            { name: "backgroundColor", type: "string", default: "#000000", description: "Background color (hex, rgb, or hsl)." },
+            { name: "progressColor", type: "string", default: "#ffffff", description: "Progress bar color (hex, rgb, or hsl)." },
+        ],
+        whenToUse: "Excellent for mysterious brands, technical archives, and Next.js platforms that want a dramatic 'Cinematic' aesthetic. Use this player for an immersive experience where content feels 'Shadowed' and 'Noir' through organic gradient overlays.",
+        bestPractices: "Maintain consistent spacing within your design system by keeping the playback controls minimal. Follow React best practices by managed the layout-id for the 'Shared Element' transition. Optimize for performance by using efficient Tailwind col-spans.",
+        whyMatters: "Noir-based digital layouts communicate digital excellence, mystery, and high-quality craft. This production-ready UI template helpsคุณ build an interface that feels responsive and alive, adding a unique architectural signature to your brand.",
+        faqs: [
+            { question: "How is it 'Cinematic'?", answer: "The component features widescreen aspect ratios, deep vignetting, and ultra-minimal controls to simulate the raw structural honesty of high-end cinematic playback." },
+            { question: "Can I adjust the progress bar?", answer: "Absolutely, you can adjust both the primary `backgroundColor` and the specific 'progressColor' accents to match your brand's specific high-intensity palette." },
+            { question: "Is it mobile responsive?", answer: "The player proportions and organic offsets adapt for mobile, ensuring the 'Noir' transition remains impactful and structural on small screens." }
+        ],
+    },
+    {
+        id: "player-hologram",
+        name: "Hologram",
+        description: "Holographic cyber video player with sci-fi interface.",
+        category: "Media",
+        installType: "cli",
+        tags: ["video", "player", "holographic", "cyber"],
+        previewUrl: "/Media/VideoPlayers/PlayerHologram",
+        code: {
+            tsx: getCode("src/components/Media/VideoPlayers/tsx/PlayerHologram.tsx"),
+            jsx: getCode("src/components/Media/VideoPlayers/jsx/PlayerHologram.jsx")
+        },
+        usageCode: { tsx: getCode("src/app/(routes)/Media/VideoPlayers/PlayerHologram/page.tsx") },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [
+            { name: "video", type: "string", default: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", description: "Video source URL." },
+            { name: "backgroundColor", type: "string", default: "#000000", description: "Background color (hex, rgb, or hsl)." },
+            { name: "accentColor", type: "string", default: "#00ffff", description: "Accent color for HUD elements (hex, rgb, or hsl)." },
+            { name: "playText", type: "string", default: "PLAY", description: "Play button text." },
+            { name: "stopText", type: "string", default: "STOP", description: "Stop button text." },
+            { name: "timePrefix", type: "string", default: "TIME:", description: "Time label prefix text." },
+        ],
+        whenToUse: "Excellent for technical portfolios, edgy agencies, and Next.js applications that want a high-tech 'Hologram' aesthetic. Use this layout to communicate power, security, and digital intelligence through dark themes and architectural grid modules.",
+        bestPractices: "Maintain scalable component architecture by pairing this with sharp, technical typography. Follow React best practices by using Framer Motion for the module reveal transitions. Optimize for performance by managed the border renders.",
+        whyMatters: "Holographic-based agency layouts communicate technical authority, sophistication, and digital craft. This production-ready UI template helpsคุณ build an interface that feels organized and high-end, adding a unique 'Cyber' signature to your brand.",
+        faqs: [
+            { question: "How does the 'HUD' work?", answer: "The component is designed with technical 'Indices' and architectural HUD aesthetics to simulate a high-quality technical repository for your project details." },
+            { question: "Can I adjust the grid?", answer: "Yes, both the primary 'accentColor' and background colors can be adjusted to create 'Industrial' or 'Cyber' agency effects." },
+            { question: "Is it mobile responsive?", answer: "The HUD spans and holographic rows adapt dynamically for mobile, ensuring the bold narrative remains impactful and structural on small screens." }
+        ],
+    },
+    {
+        id: "player-editorial",
+        name: "Editorial",
+        description: "Editorial split layout video player.",
+        category: "Media",
+        installType: "cli",
+        tags: ["video", "player", "editorial", "split"],
+        previewUrl: "/Media/VideoPlayers/PlayerEditorial",
+        code: {
+            tsx: getCode("src/components/Media/VideoPlayers/tsx/PlayerEditorial.tsx"),
+            jsx: getCode("src/components/Media/VideoPlayers/jsx/PlayerEditorial.jsx")
+        },
+        usageCode: { tsx: getCode("src/app/(routes)/Media/VideoPlayers/PlayerEditorial/page.tsx") },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [
+            { name: "video", type: "string", default: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", description: "Video source URL." },
+            { name: "backgroundColor", type: "string", default: "#f5f5f5", description: "Background color (hex, rgb, or hsl)." },
+            { name: "category", type: "string", default: "Documentary", description: "Category label text." },
+            { name: "title", type: "string", default: "The Art of Motion", description: "Title text." },
+            { name: "description", type: "string", default: "Exploring the intersection of movement and stillness in modern cinematography.", description: "Description text." },
+            { name: "buttonText", type: "string", default: "Watch Full Film", description: "Button text." },
+            { name: "playingText", type: "string", default: "Now Playing", description: "Playing status text." },
+            { name: "progressColor", type: "string", default: "#000000", description: "Progress bar color (hex, rgb, or hsl)." },
+        ],
+        whenToUse: "Excellent for high-end fashion portfolios, editorial magazines, and creative agencies that want a sharp 'Editorial' aesthetic. Use this split-screen layout to showcase project collections with a mix of asymmetrical heights and technical typography.",
+        bestPractices: "Follow React best practices by pairing this with professional, high-contrast imagery. Maintain consistent spacing within your design system by keeping the grid gaps uniform. Optimize for performance by using efficient image loading patterns.",
+        whyMatters: "Editorial layouts communicate digital excellence, fashion-forward thinking, and attention to detail. This production-ready UI template helpsคุณ build an interface that feels curated and premium, leaving a lasting visual impression on high-value clients.",
+        faqs: [
+            { question: "How does it split?", answer: "The component uses localized shared-element transitions (layout-id) to seamlessly move the video into a split view with the text details, creating a high-fidelity 'opening' effect." },
+            { question: "Can I adjust the grid?", answer: "Absolutely, both the primary 'backgroundColor' and the specific 'progressColor' are fully configurable, allowing you to create 'High-Contrast' magazine effects." },
+            { question: "Is it mobile responsive?", answer: "The vertical flow and typographic scales adapt for mobile, ensuring the 'Editorial' narrative remains impactful and structural on small screens." }
+        ],
+    },
+    {
+        id: "player-circular",
+        name: "Circular",
+        description: "Circular reveal video player with geometric design.",
+        category: "Media",
+        installType: "cli",
+        tags: ["video", "player", "circular", "geometric"],
+        previewUrl: "/Media/VideoPlayers/PlayerCircular",
+        code: {
+            tsx: getCode("src/components/Media/VideoPlayers/tsx/PlayerCircular.tsx"),
+            jsx: getCode("src/components/Media/VideoPlayers/jsx/PlayerCircular.jsx")
+        },
+        usageCode: { tsx: getCode("src/app/(routes)/Media/VideoPlayers/PlayerCircular/page.tsx") },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [
+            { name: "video", type: "string", default: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", description: "Video source URL." },
+            { name: "backgroundColor", type: "string", default: "#0a0a0a", description: "Background color (hex, rgb, or hsl)." },
+            { name: "progressColor", type: "string", default: "#ffffff", description: "Progress bar color (hex, rgb, or hsl)." },
+            { name: "circleColor", type: "string", default: "#ffffff", description: "Circle border color (hex, rgb, or hsl)." },
+        ],
+        whenToUse: "Perfect for high-octane brands, gaming labs, and Next.js platforms that want an immersive 'Circular' aesthetic. Use this layout for a tactile experience with organic reveal animations and heat-gradient effects.",
+        bestPractices: "Maintain scalable component architecture by keeping the circle sizes balanced. Follow React best practices by using Framer Motion for the fluid advection renders. Optimize for performance by managed the gradient intensity.",
+        whyMatters: "Circular reveal aesthetics communicate digital complexity, flow, and digital craft. This production-ready UI template helpsคุณ build an interface that feels advanced and 'Breathing', adding a unique 'Orbital' signature to your project.",
+        faqs: [
+            { question: "How does the 'Circle' open?", answer: "The component uses localized SVG clips and spring physics to simulate organic 'Circular' reveals that expand and contract smoothly as they interact with the grid." },
+            { question: "Can I adjust the border?", answer: "Absolutely, you can customize both the primary `backgroundColor` and the persistent `circleColor` to match your brand's specific intensity." },
+            { question: "Is it mobile responsive?", answer: "The liquid flows and circle spans adapt for mobile, ensuring the 'Orbital' feel remains consistent on high-density mobile screens." }
+        ],
+    },
+    {
+        id: "player-bento",
+        name: "Bento",
+        description: "Bento grid video player with masonry layout.",
+        category: "Media",
+        installType: "cli",
+        tags: ["video", "player", "bento", "grid"],
+        previewUrl: "/Media/VideoPlayers/PlayerBento",
+        code: {
+            tsx: getCode("src/components/Media/VideoPlayers/tsx/PlayerBento.tsx"),
+            jsx: getCode("src/components/Media/VideoPlayers/jsx/PlayerBento.jsx")
+        },
+        usageCode: { tsx: getCode("src/app/(routes)/Media/VideoPlayers/PlayerBento/page.tsx") },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [
+            { name: "videos", type: "string[]", default: "[...array of video URLs]", description: "Array of video source URLs." },
+            { name: "backgroundColor", type: "string", default: "#000000", description: "Background color (hex, rgb, or hsl)." },
+            { name: "progressColor", type: "string", default: "#10b981", description: "Progress bar color (hex, rgb, or hsl)." },
+        ],
+        whenToUse: "Ideal for creative studios, experimental art projects, and Next.js portfolios that want an organic 'Bento-Grid' aesthetic. Use this layout for an engaging experience where content feels 'Tiled' and 'Stacked' by physical grid borders.",
+        bestPractices: "Maintain scalable component architecture by keeping the bento labels consistent. Follow React best practices by pairing this with bold, technical typography. Optimize for performance by managed the mosaic intensity.",
+        whyMatters: "Grid-based animations create a sense of digital 'Authenticity' and structural honesty. This production-ready UI template helpsคุณ build an interface that feels alive and 'Drafted', adding a unique signatures to your brand structure.",
+        faqs: [
+            { question: "How does the 'Grid' work?", answer: "The component features a localized masonry grid layout, allowing users to 'Seek' through multiple project narratives simultaneously with high-fidelity playback control." },
+            { question: "Can I adjust gaps?", answer: "Yes, both the primary background and specific grid gaps are fully configurable to match your brand's specific intensity." },
+            { question: "Is it mobile responsive?", answer: "The horizontal flow and typographic scales adapt for mobile, ensuring the 'Draft' narrative remains impactful and structural on small screens." }
+        ],
+    },
+];
+

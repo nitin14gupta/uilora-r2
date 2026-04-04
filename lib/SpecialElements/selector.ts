@@ -1,0 +1,198 @@
+import { getCode } from "../getCode";
+import { Component } from "../types";
+
+export const selectorComponents: Component[] = [
+    {
+        id: "segmented-selector",
+        name: "Segmented Selector",
+        description: "Classic premium segmented selector with animated background indicator. Features spring physics, glowing active state, and icon support with responsive labels.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["special-elements", "selector", "segmented", "premium", "animated", "indicator"],
+        previewUrl: "/SpecialElements/Selector/SegmentedSelector",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Selector/tsx/SegmentedSelector.tsx"),
+            jsx: getCode("src/components/SpecialElements/Selector/jsx/SegmentedSelector.jsx"),
+        },
+        usageCode: { tsx: getCode("src/app/(routes)/SpecialElements/Selector/SegmentedSelector/page.tsx") },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [],
+        whenToUse: "Excellent for dashboard settings, theme toggles, and Next.js applications that want a classic premium 'Segmented' aesthetic. Use this selector to provide clear, tactile feedback during mode switching.",
+        bestPractices: "Maintain consistent spacing within your design system by keeping the segments balanced. Follow React best practices by pairing this with sharp, technical typography. Optimize for performance by using efficient layout-id transitions.",
+        whyMatters: "Segmented selectors communicate digital excellence, precision, and modern craft. This production-ready UI template helpsคุณ build an interface that feels responsive and organized, adding a unique 'Moving' signature to your settings panel.",
+        faqs: [
+            { question: "How does the indicator move?", answer: "The component uses localized x-offsets and layout-id transitions to move the active background between segments, creating a high-fidelity 'opening' effect." },
+            { question: "Can I adjust the speed?", answer: "Absolutely, you can customize the Framer Motion transition properties to adjust both the damping and stiffness of the background animation." },
+            { question: "Is it mobile responsive?", answer: "The segments and typographic scales adapt for mobile, ensuring the toggle remains impactful and structural on small screens." }
+        ],
+    },
+    {
+        id: "icon-picker",
+        name: "Icon Picker",
+        description: "Icon-based style picker with active dot indicators. Features hover lift animations, glow effects on active state, and compact icon-only layout.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["special-elements", "selector", "icon", "picker", "toolkit", "compact"],
+        previewUrl: "/SpecialElements/Selector/IconPicker",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Selector/tsx/IconPicker.tsx"),
+            jsx: getCode("src/components/SpecialElements/Selector/jsx/IconPicker.jsx"),
+        },
+        usageCode: { tsx: getCode("src/app/(routes)/SpecialElements/Selector/IconPicker/page.tsx") },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [],
+        whenToUse: "Ideal for toolbar toolkits, drawing apps, and Next.js platforms that want a compact 'Icon-Based' aesthetic. Use this picker to save space while maintaining extreme technical clarity through micro-icons.",
+        bestPractices: "Maintain scalable component architecture by pairing this with sharp, technical icons. Follow React best practices by using Lucide-react for the individual options. Optimize for performance by managed the dot indicator renders.",
+        whyMatters: "Icon-based selectors communicate power, efficiency, and structural honesty. This production-ready UI template helpsคุณ build an interface that feels authoritative and solid, adding a unique signature to your toolkit.",
+        faqs: [
+            { question: "How work dot indicators?", answer: "The component features localized absolute positioning and spring physics to 'snap' the dot indicator to the active icon, simulating the raw structural honesty of architectural blueprint pins." },
+            { question: "Are colors dynamic?", answer: "Yes, both the primary 'activeColor' and background glows can be adjusted to create 'Industrial' or 'Cyber' agency effects." },
+            { question: "Is it mobile responsive?", answer: "The icon spans and typographic scales adapt for mobile, ensuring the micro-narrative remains impactful and structural on small screens." }
+        ],
+    },
+    {
+        id: "floating-pills",
+        name: "Floating Pills",
+        description: "Glassy minimalist floating pills selector with morphing background. Features backdrop blur, glassmorphism design, and smooth layout transitions.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["special-elements", "selector", "pills", "floating", "glassy", "glassmorphism"],
+        previewUrl: "/SpecialElements/Selector/FloatingPills",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Selector/tsx/FloatingPills.tsx"),
+            jsx: getCode("src/components/SpecialElements/Selector/jsx/FloatingPills.jsx"),
+        },
+        usageCode: { tsx: getCode("src/app/(routes)/SpecialElements/Selector/FloatingPills/page.tsx") },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [],
+        whenToUse: "Ideal for high-end digital agencies, creative portfolios, and Next.js applications that want a premium 'Floating Glass' aesthetic. Use this selector for an immersive experience with blur effects and light refraction cues.",
+        bestPractices: "Maintain consistent spacing within your design system by keeping the path items organized. Follow React best practices by pairing this with soft, neutral colors. Optimize for performance by managed the amount of blur renders.",
+        whyMatters: "Glass-based aesthetics communicate digital excellence, sophistication, and high-end craft. This production-ready UI template helpsคุณ build an interface that feels curated and premium, leaving a lasting visual impression on high-value clients.",
+        faqs: [
+            { question: "Is the 'Glass' effect real?", answer: "The component uses localized backdrop-filter blur and subtle inner glows (glass-shadows) to simulate light refraction through high-fidelity translucent surfaces." },
+            { question: "Can I change the backdrop?", answer: "Absolutely, both the primary 'backgroundColor' (gradient or solid) and the persistent blur intensity are fully configurable to match your digital brand." },
+            { question: "Is it mobile responsive?", answer: "The floating pills adapt their spans and layouts for mobile, ensuring the refractive narrative remains impactful and legible on small screens." }
+        ],
+    },
+    {
+        id: "card-grid-selector",
+        name: "Card Grid Selector",
+        description: "Visual card grid selector with rim light effects. Features grid layout, emerald accent colors, and active rim light animations on selection.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["special-elements", "selector", "card", "grid", "visual", "rim-light"],
+        previewUrl: "/SpecialElements/Selector/CardGridSelector",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Selector/tsx/CardGridSelector.tsx"),
+            jsx: getCode("src/components/SpecialElements/Selector/jsx/CardGridSelector.jsx"),
+        },
+        usageCode: { tsx: getCode("src/app/(routes)/SpecialElements/Selector/CardGridSelector/page.tsx") },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [],
+        whenToUse: "Excellent for visual option selecting, pricing plan pickers, and Next.js applications that want a high-tech 'Visual Card' aesthetic. Use this grid to communicate hierarchical power and digital intelligence through rim-light effects.",
+        bestPractices: "Maintain scalable component architecture by pairing this with high-contrast imagery. Follow React best practices by using Framer Motion for the border reveal transitions. Optimize for performance by managed the card renders.",
+        whyMatters: "Rim-light agency layouts communicate technical authority, sophistication, and digital craft. This production-ready UI template helpsคุณ build an interface that feels organized and high-end, adding a unique 'Corporate' signatures to your brand selection.",
+        faqs: [
+            { question: "What is 'Rim Light'?", answer: "The component features localized CSS gradients and mask-composite filters to simulate high-fidelity industrial light bleeding from the module edges." },
+            { question: "Are colors dynamic?", answer: "Yes, both the primary accent color (default Emerald) and background intensities can be adjusted to create 'Industrial' or 'Cyber' agency effects." },
+            { question: "Is it mobile responsive?", answer: "The grid columns and typographic scales adapt for mobile, ensuring the bold narrative remains impactful and structural on small screens." }
+        ],
+    },
+    {
+        id: "inline-selector",
+        name: "Inline Selector",
+        description: "Elegant thin inline style selector with sliding underline. Features minimal design, underline slide animations, and separator dividers.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["special-elements", "selector", "inline", "elegant", "underline", "minimal"],
+        previewUrl: "/SpecialElements/Selector/InlineSelector",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Selector/tsx/InlineSelector.tsx"),
+            jsx: getCode("src/components/SpecialElements/Selector/jsx/InlineSelector.jsx"),
+        },
+        usageCode: { tsx: getCode("src/app/(routes)/SpecialElements/Selector/InlineSelector/page.tsx") },
+        dependencies: ["lucide-react"],
+        props: [],
+        whenToUse: "Ideal for text editors, minimalist blogs, and Next.js platforms that want a sharp 'Inline' aesthetic. Use this layout to showcase options with a mix of asymmetrical heights and technical typography.",
+        bestPractices: "Follow React best practices by pairing this with professional, high-contrast imagery. Maintain consistent spacing within your design system by keeping the grid gaps uniform. Optimize for performance by using efficient layout-id transitions.",
+        whyMatters: "Minimalist inline layouts communicate digital excellence, fashion-forward thinking, and attention to detail. This production-ready UI template helpsคุณ build an interface that feels curated and premium, leaving a lasting visual impression on high-value clients.",
+        faqs: [
+            { question: "How does 'Underline' work?", answer: "The component features localized x-offsets and layout-id transitions to move the active underline between items, creating a high-fidelity 'opening' effect." },
+            { question: "Can I adjust labels?", answer: "Absolutely, both the primary 'options' and specific weights are fully configurable, allowedคุณ to create 'High-Contrast' magazine effects." },
+            { question: "Is it mobile responsive?", answer: "The vertical flow and typographic scales adapt for mobile, ensuring the 'Draft' narrative remains impactful and structural on small screens." }
+        ],
+    },
+    {
+        id: "animated-indicator",
+        name: "Animated Indicator",
+        description: "Material premium animated indicator with gradient underline. Features tab-style layout, gradient indicator bar, and responsive icon labels.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["special-elements", "selector", "animated", "indicator", "material", "gradient"],
+        previewUrl: "/SpecialElements/Selector/AnimatedIndicator",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Selector/tsx/AnimatedIndicator.tsx"),
+            jsx: getCode("src/components/SpecialElements/Selector/jsx/AnimatedIndicator.jsx"),
+        },
+        usageCode: { tsx: getCode("src/app/(routes)/SpecialElements/Selector/AnimatedIndicator/page.tsx") },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [],
+        whenToUse: "Excellent for high-end digital platforms, SaaS dashboards, and Next.js applications that want a material 'Animated Indicator' aesthetic. Use this selector for an immersive experience with gradient cues and smooth layout transitions.",
+        bestPractices: "Maintain consistent spacing within your design system by keeping the items organized and legible. Follow React best practices by pairing this with bold, professional typography. Optimize for performance by managed the gradient renders.",
+        whyMatters: "Material-based aesthetics communicate digital excellence, fluidity, and modern craft. This production-ready UI template helpsคุณ build an interface that feels alive and premium, adding a unique architectural signature to your brand interaction.",
+        faqs: [
+            { question: "Why 'Gradient'?", answer: "The component features skewed containers and slanted gradient paths to simulate the raw structural honesty of the material architectural movement." },
+            { question: "Can I adjust colors?", answer: "Absolutely, you can adjust both the primary `backgroundColor` and the specific progress colors to match your brand's specific intensity." },
+            { question: "Is it mobile responsive?", answer: "The indicator scales and typographic weights adapt for mobile, ensuring the objective clarity remains consistent on high-density mobile screens." }
+        ],
+    },
+    {
+        id: "compact-strip",
+        name: "Compact Strip",
+        description: "Toolbar-style compact icon and label strip selector. Features compact layout, animated background indicator, and icon-label combinations.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["special-elements", "selector", "compact", "strip", "toolbar", "icon-label"],
+        previewUrl: "/SpecialElements/Selector/CompactStrip",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Selector/tsx/CompactStrip.tsx"),
+            jsx: getCode("src/components/SpecialElements/Selector/jsx/CompactStrip.jsx"),
+        },
+        usageCode: { tsx: getCode("src/app/(routes)/SpecialElements/Selector/CompactStrip/page.tsx") },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [],
+        whenToUse: "Excellent for side-navigation menus, compact toolbar strips, and Next.js applications that want an organic 'Compact' aesthetic. Use this selector to save space while maintaining easy access to tool labels.",
+        bestPractices: "Maintain scalable component architecture by pairing this with sharp, technical typography. Follow React best practices by using Framer Motion for the background reveal transitions. Optimize for performance by managed the layout-id.",
+        whyMatters: "Compact-strip animations communicate digital flow, efficiency, and modern craft. This production-ready UI template helpsคุณ build an interface that feels responsive and organized, adding a unique 'Moving' signature to your brand.",
+        faqs: [
+            { question: "How does 'Strip' work?", answer: "The component uses localized x-offsets and spring physics to 'reveal' the background highlights as users interaction with the options, creating a high-fidelity 'opening' effect." },
+            { question: "Are colors dynamic?", answer: "Absolutely, you can adjust both the primary `backgroundColor` and specific highlight colors to match your brand's specific high-intensity palette." },
+            { question: "Is it mobile responsive?", answer: "The strip spans and typographic scales adapt for mobile, ensuring the 'Compact' narrative remains impactful and structural on small screens." }
+        ],
+    },
+    {
+        id: "large-thumbnails",
+        name: "Large Thumbnails",
+        description: "Cinematic large preview thumbnails selector with mock content previews. Features thumbnail cards with preview content, overlay states, and check indicators.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["special-elements", "selector", "thumbnails", "cinematic", "preview", "visual"],
+        previewUrl: "/SpecialElements/Selector/LargeThumbnails",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Selector/tsx/LargeThumbnails.tsx"),
+            jsx: getCode("src/components/SpecialElements/Selector/jsx/LargeThumbnails.jsx"),
+        },
+        usageCode: { tsx: getCode("src/app/(routes)/SpecialElements/Selector/LargeThumbnails/page.tsx") },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [],
+        whenToUse: "Ideal for creative studios, award-winning portfolios, and Next.js platforms that want a meaningful 'Cinematic' aesthetic. Use this thumbnail selector to communicate digital excellence through large modules and visual storytelling.",
+        bestPractices: "Maintain consistent spacing within your design system by using it for focal narratives. Follow React best practices by pairing this with bold, professional photography. Optimize for performance by using efficient image textures.",
+        whyMatters: "Perspective-based aesthetics communicate technical reliability, clarity, and timeless craft. This production-ready UI template helpsคุณ build an interface that feels organized and professional, reflecting a brand identity rooted in design purity.",
+        faqs: [
+            { question: "Why 'Large'? ", answer: "The component features cinematic aspect ratios and high-fidelity overlays to simulate the raw structural honesty of architectural blueprint failures, focusing on both imagery and story." },
+            { question: "Can I adjust labels?", answer: "Absolutely, you can adjust both the original `title` and specific `description` labels to match your project's specific terminology." },
+            { question: "Is it mobile responsive?", answer: "The grid columns and typographic scales adapt for mobile, ensuring the objective clarity remains consistent on high-density mobile screens." }
+        ],
+    },
+];
+
