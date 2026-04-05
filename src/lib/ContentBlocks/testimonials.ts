@@ -51,6 +51,7 @@ export const testimonialComponents: Component[] = [
             { question: "Can I adjust the rotation?", answer: "The `headerRotate` prop allows you to control the exact tilt of the 'Unfiltered Feedback' banner for a custom 'hand-placed' look." },
             { question: "Are the shadow colors customizable?", answer: "Each card's shadow color is fully customizable via the `cardShadowColor` prop, supporting both solid blacks and vibrant secondary colors." }
         ],
+        imageUrl: "testimonials-brutalist.png"
     },
     {
         id: "testimonials-dark",

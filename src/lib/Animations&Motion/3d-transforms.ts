@@ -42,6 +42,8 @@ export const transform3DComponents: Component[] = [
             { question: "Is it compatible with Next.js?", answer: "Absolutely! This component is optimized for Next.js and works seamlessly with Framer Motion for smooth animations." },
             { question: "Does it support mobile touch?", answer: "While designed for mouse interaction, the component responds to touch move events on mobile devices for a consistent 3D feel." }
         ],
+        imageUrl: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop',
+        videoUrl: 'https://www.pexels.com/download/video/20523188/',
     },
     {
         id: "parallax-stack",
