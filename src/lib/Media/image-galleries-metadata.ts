@@ -9,13 +9,11 @@ export const imageGalleryComponentsMetadata: Component[] = [
         installType: "cli",
         tags: ["gallery", "mosaic", "parallax", "minimal"],
         previewUrl: "/Media/ImageGalleries/GalleryMosaic",
-        code: {
-            tsx: "",
-        },
+        code: { tsx: "" },
         usageCode: { tsx: "" },
         dependencies: ["next", "framer-motion"],
         props: [
-            { name: "images", type: "string[]", default: "[...array of image URLs]", description: "Array of image source URLs." },
+            { name: "images", type: "string[]", default: "[...array of 15 image URLs]", description: "Array of image source URLs (15 recommended for 5 per column)." },
             { name: "backgroundColor", type: "string", default: "#FDFBF7", description: "Background color (hex, rgb, or hsl)." },
             { name: "viewText", type: "string", default: "View", description: "Text displayed on hover overlay." },
             { name: "scrollSpeed1", type: "number", default: "-200", description: "Scroll speed for first column (negative = up, positive = down)." },
@@ -24,11 +22,11 @@ export const imageGalleryComponentsMetadata: Component[] = [
         ],
         whenToUse: "Perfect for fashion editorials, interior design portfolios, and travel blogs that want a light, airy 'Mosaic' aesthetic. Use this gallery to showcase a collection of images with a sense of depth and organic movement.",
         bestPractices: "Maintain consistent spacing within your design system by keeping the column gaps uniform. Follow React best practices by pairing this with high-fidelity, professional photography. Optimize for performance by using efficient image loading patterns.",
-        whyMatters: "Mosaic layouts communicate digital elegance, sophistication, and attention to detail. This production-ready UI template helpsคุณ build an interface that feels curated and premium, leaving a lasting visual impression on high-value clients.",
+        whyMatters: "Mosaic layouts communicate digital elegance, sophistication, and attention to detail. This production-ready UI template helps you build an interface that feels curated and premium, leaving a lasting visual impression on high-value clients.",
         faqs: [
             { question: "How does the parallax work?", answer: "The gallery uses localized scroll-driven animations with varying speeds for each column, creating a high-fidelity 'depth' effect as the user navigates the page." },
             { question: "Can I adjust the speeds?", answer: "Absolutely, both the direction and intensity of the column movement (scrollSpeed1, 2, 3) are fully configurable to match your scroll intensity." },
-            { question: "Is it mobile responsive?", answer: "Yes, the multi-column mosaic adapts its spans dynamically for mobile, Ensuring the organic flow remains impactful and readable on small screens." }
+            { question: "Is it mobile responsive?", answer: "Yes, the multi-column mosaic adapts its spans dynamically for mobile, ensuring the organic flow remains impactful and readable on small screens." }
         ],
     },
     {
@@ -39,9 +37,7 @@ export const imageGalleryComponentsMetadata: Component[] = [
         installType: "cli",
         tags: ["gallery", "diagonal", "brutalist", "cyber"],
         previewUrl: "/Media/ImageGalleries/GalleryDiagonal",
-        code: {
-            tsx: "",
-        },
+        code: { tsx: "" },
         usageCode: { tsx: "" },
         dependencies: ["next", "framer-motion"],
         props: [
@@ -55,7 +51,7 @@ export const imageGalleryComponentsMetadata: Component[] = [
         ],
         whenToUse: "Ideal for edgy streetwear brands, experimental art portfolios, and Next.js applications that want an energetic 'Diagonal' aesthetic. Use this gallery to showcase project collections with a high-intensity, industrial 'Raw' vibe.",
         bestPractices: "Maintain consistent spacing within your design system by using it for aggressive brand storytelling. Follow React best practices by pairing it with bold, technical typography. Optimize for performance by managed the marquee intensity.",
-        whyMatters: "Diagonal-based aesthetics communicate power, mystery, and structural honesty. This production-ready UI template helpsคุณ build an interface that feels authoritative and solid, breaking the 'standard' web layout rules.",
+        whyMatters: "Diagonal-based aesthetics communicate power, mystery, and structural honesty. This production-ready UI template helps you build an interface that feels authoritative and solid, breaking the 'standard' web layout rules.",
         faqs: [
             { question: "Why 'Diagonal'?", answer: "The gallery features skewed containers and slanted text paths to simulate the raw structural honesty of the brutalist architectural movement." },
             { question: "Can I adjust colors?", answer: "Yes, both the primary 'overlayColor' and the specific 'badgeColor' are fully configurable, allowing you to create 'Cyber' or 'Industrial' pop effects." },
@@ -70,9 +66,7 @@ export const imageGalleryComponentsMetadata: Component[] = [
         installType: "cli",
         tags: ["gallery", "broken", "grid", "asymmetric"],
         previewUrl: "/Media/ImageGalleries/GalleryBroken",
-        code: {
-            tsx: "",
-        },
+        code: { tsx: "" },
         usageCode: { tsx: "" },
         dependencies: ["next", "framer-motion"],
         props: [
@@ -84,11 +78,11 @@ export const imageGalleryComponentsMetadata: Component[] = [
         ],
         whenToUse: "Excellent for technical portfolios, edgy agencies, and Next.js platforms that want a dramatic 'Broken Grid' aesthetic. Use this layout to communicate structural scale and digital craft through architectural modules.",
         bestPractices: "Maintain consistent spacing within your design system by using variable, organic grid gaps. Follow React best practices by pairing this with bold, technical typography. Optimize for performance by using efficient image textures.",
-        whyMatters: "Broken layouts communicate power, mystery, and structural honesty. This production-ready UI template helpsคุณ build an interface that feels authoritative and solid, breaking the 'standard' web layout rules.",
+        whyMatters: "Broken layouts communicate power, mystery, and structural honesty. This production-ready UI template helps you build an interface that feels authoritative and solid, breaking the 'standard' web layout rules.",
         faqs: [
             { question: "How is it 'Broken'?", answer: "The grid uses non-uniform column spans and staggered vertical offsets (y-translation) to simulate the raw structural honesty of architectural blueprint failures." },
             { question: "Can I add more text?", answer: "Absolutely, while optimized for high-contrast imagery, you can expand the text cards to include project descriptions or technical metadata." },
-            { question: "Is it mobile responsive?", answer: "The grid's asymmetric spans adapt dynamically for mobile, Ensuring the structural narrative remains impactful on small screens." }
+            { question: "Is it mobile responsive?", answer: "The grid's asymmetric spans adapt dynamically for mobile, ensuring the structural narrative remains impactful on small screens." }
         ],
     },
     {
@@ -99,9 +93,7 @@ export const imageGalleryComponentsMetadata: Component[] = [
         installType: "cli",
         tags: ["gallery", "deck", "stack", "layered"],
         previewUrl: "/Media/ImageGalleries/GalleryDeck",
-        code: {
-            tsx: "",
-        },
+        code: { tsx: "" },
         usageCode: { tsx: "" },
         dependencies: ["next", "framer-motion"],
         props: [
@@ -114,7 +106,7 @@ export const imageGalleryComponentsMetadata: Component[] = [
         ],
         whenToUse: "Ideal for wellness apps, lifestyle brands, and Next.js platforms that want a soft 'Clay' aesthetic. Use this gallery for an engaging 'Deck' experience where images feel 'Physical' and 'Stacked' like real paper cards.",
         bestPractices: "Maintain consistent spacing within your design system by adhering to the soft neumorphic shadows. Follow React best practices by using pure Tailwind for the layout structure. Optimize for performance by using systematic typography scales.",
-        whyMatters: "Neumorphic 'Clay' aesthetics communicate technical reliability, clarity, and timeless craft. This production-ready UI template helpsคุณ build an interface that feels organized and professional, reflecting a brand identity rooted in design purity.",
+        whyMatters: "Neumorphic 'Clay' aesthetics communicate technical reliability, clarity, and timeless craft. This production-ready UI template helps you build an interface that feels organized and professional, reflecting a brand identity rooted in design purity.",
         faqs: [
             { question: "What is 'Clay Case'?", answer: "The component uses localized CSS box-shadows and subtle inner glows to simulate the soft, matte surfaces found in high-fidelity 3D clay renders." },
             { question: "How does it expand?", answer: "The deck uses localized mouse coordinates to fan out the cards during hover, creating a high-fidelity 'physical' expansion of the underlying project detail." },
@@ -129,9 +121,7 @@ export const imageGalleryComponentsMetadata: Component[] = [
         installType: "cli",
         tags: ["gallery", "cinematic", "widescreen", "presentation"],
         previewUrl: "/Media/ImageGalleries/GalleryCinematic",
-        code: {
-            tsx: "",
-        },
+        code: { tsx: "" },
         usageCode: { tsx: "" },
         dependencies: ["next", "framer-motion"],
         props: [
@@ -144,7 +134,7 @@ export const imageGalleryComponentsMetadata: Component[] = [
         ],
         whenToUse: "Excellent for high-end fashion campaigns, award-winning portfolios, and Next.js applications that want a meaningful 'Cinematic' aesthetic. Use this layout to communicate digital excellence and sophisticated storytelling through widescreen modules.",
         bestPractices: "Maintain consistent spacing within your design system by using it for focal narratives. Follow React best practices by pairing this with bold, professional typography. Optimize for performance by using efficient image textures.",
-        whyMatters: "Cinematic-based aesthetics communicate technical reliability, clarity, and timeless craft. This production-ready UI template helpsคุณ build an interface that feels organized and professional, reflecting a brand identity rooted in design purity.",
+        whyMatters: "Cinematic-based aesthetics communicate technical reliability, clarity, and timeless craft. This production-ready UI template helps you build an interface that feels organized and professional, reflecting a brand identity rooted in design purity.",
         faqs: [
             { question: "How does it scale?", answer: "The component uses localized scroll-driven transforms (scale, blur) to simulate a high-fidelity 'Camera Zoom' into the heart of the project narrative." },
             { question: "Can I adjust scroll?", answer: "Yes, both the direction and intensity of the zoom (scrollHeight) are fully configurable to match your scroll intensity." },
@@ -159,9 +149,7 @@ export const imageGalleryComponentsMetadata: Component[] = [
         installType: "cli",
         tags: ["gallery", "film", "strip", "scrolling"],
         previewUrl: "/Media/ImageGalleries/GalleryFilmStrip",
-        code: {
-            tsx: "",
-        },
+        code: { tsx: "" },
         usageCode: { tsx: "" },
         dependencies: ["next", "framer-motion"],
         props: [
@@ -174,44 +162,11 @@ export const imageGalleryComponentsMetadata: Component[] = [
         ],
         whenToUse: "Ideal for creative studios, experimental art projects, and Next.js portfolios that want an organic 'Film-Strip' aesthetic. Use this layout for an engaging experience where content feels 'Mailed' and 'Drafted' by physical film borders.",
         bestPractices: "Maintain scalable component architecture by keeping the archive labels consistent. Follow React best practices by pairing this with bold, technical typography. Optimize for performance by managed the marquee intensity.",
-        whyMatters: "Hand-drawn film animations create a sense of digital 'Authenticity' and human touch. This production-ready UI template helpsคุณ build an interface that feels alive and 'Drafted', adding a unique signatures to your brand structure.",
+        whyMatters: "Hand-drawn film animations create a sense of digital 'Authenticity' and human touch. This production-ready UI template helps you build an interface that feels alive and 'Drafted', adding a unique signatures to your brand structure.",
         faqs: [
             { question: "Are those film labels real?", answer: "The component features localized metadata strings (ISO 400, FIG.) and rough film-strip borders to simulate the raw structural honesty of architectural blueprint failures." },
             { question: "How does it scroll?", answer: "The strip uses localized scroll-driven animations with varying offsets for each row, creating a high-fidelity 'physical' movement as the user navigates the page." },
             { question: "Is it mobile responsive?", answer: "The horizontal flow and typographic scales adapt for mobile, ensuring the 'Draft' narrative remains impactful and structural on small screens." }
-        ],
-    },
-    {
-        id: "uilora-gallery-bento",
-        name: "Bento",
-        description: "Bento grid gallery with masonry layout.",
-        category: "Media",
-        installType: "cli",
-        tags: ["gallery", "bento", "grid", "masonry"],
-        previewUrl: "/Media/ImageGalleries/GalleryBento",
-        code: {
-            tsx: "",
-        },
-        usageCode: { tsx: "" },
-        dependencies: ["next", "framer-motion"],
-        props: [
-            { name: "images", type: "string[]", default: "[...array of image URLs]", description: "Array of image source URLs." },
-            { name: "backgroundColor", type: "string", default: "#0f172a", description: "Background color (hex, rgb, or hsl)." },
-            { name: "mainTitle", type: "string", default: "Studio Life", description: "Main hero section title." },
-            { name: "mainSubtitle", type: "string", default: "Design System", description: "Main hero section subtitle." },
-            { name: "accentColor1", type: "string", default: "#BFA3D2", description: "First accent color for decorative elements (hex, rgb, or hsl)." },
-            { name: "accentColor2", type: "string", default: "#5C3D74", description: "Second accent color for decorative elements (hex, rgb, or hsl)." },
-            { name: "accentColor3", type: "string", default: "#fb923c", description: "Third accent color for decorative elements (hex, rgb, or hsl)." },
-            { name: "accentColor4", type: "string", default: "#2dd4bf", description: "Fourth accent color for decorative elements (hex, rgb, or hsl)." },
-            { name: "moreText", type: "string", default: "More +", description: "Text displayed in the 'more' card." },
-        ],
-        whenToUse: "Excellent for technical portfolios, edgy agencies, and Next.js applications that want a high-tech 'Bento' aesthetic. Use this layout to communicate power, security, and digital intelligence through dark themes and architectural grid modules.",
-        bestPractices: "Maintain scalable component architecture by pairing this with sharp, technical typography. Follow React best practices by using Framer Motion for the module reveal transitions. Optimize for performance by managed the border renders.",
-        whyMatters: "Bento-based layouts communicate technical authority, sophistication, and digital craft. This production-ready UI template helpsคุณ build an interface that feels organized and high-end, adding a unique 'Corporate' signature to your brand.",
-        faqs: [
-            { question: "How does the 'Bento' work?", answer: "The gallery is designed with technical 'Indices' and architectural aesthetics to simulate a high-quality technical repository for your project details." },
-            { question: "Can I adjust the grid?", answer: "Yes, both the Tailwind col-spans and primary background colors can be adjusted to create 'Industrial' or 'Cyber' agency effects." },
-            { question: "Is it mobile responsive?", answer: "The grid spans adapt dynamically for mobile, ensuring the bold narrative remains impactful and structural on small screens." }
         ],
     },
     {
@@ -222,9 +177,7 @@ export const imageGalleryComponentsMetadata: Component[] = [
         installType: "cli",
         tags: ["gallery", "editorial", "magazine", "layout"],
         previewUrl: "/Media/ImageGalleries/GalleryEditorial",
-        code: {
-            tsx: "",
-        },
+        code: { tsx: "" },
         usageCode: { tsx: "" },
         dependencies: ["next", "framer-motion"],
         props: [
@@ -235,7 +188,7 @@ export const imageGalleryComponentsMetadata: Component[] = [
         ],
         whenToUse: "Ideal for high-end fashion portfolios, editorial magazines, and creative agencies that want a sharp 'Editorial' aesthetic. Use this layout to showcase project collections with a mix of asymmetrical heights and technical typography.",
         bestPractices: "Follow React best practices by pairing this with professional, high-contrast photography. Maintain consistent spacing within your design system by keeping the grid gaps uniform. Optimize for performance by using efficient image loading patterns.",
-        whyMatters: "Editorial layouts communicate digital excellence, fashion-forward thinking, and attention to detail. This production-ready UI template helpsคุณ build an interface that feels curated and premium, leaving a lasting visual impression on high-value clients.",
+        whyMatters: "Editorial layouts communicate digital excellence, fashion-forward thinking, and attention to detail. This production-ready UI template helps you build an interface that feels curated and premium, leaving a lasting visual impression on high-value clients.",
         faqs: [
             { question: "How does the 'Chapter' work?", answer: "The gallery is designed with an indexing feel (Chapter 01, 02) to simulate a technical feature repository or architectural project repository." },
             { question: "Can I adjust the typography?", answer: "Absolutely, both the primary 'title' and the specific 'titleItalic' weights are fully configurable, allowing you to create 'High-Contrast' magazine effects." },
@@ -243,65 +196,80 @@ export const imageGalleryComponentsMetadata: Component[] = [
         ],
     },
     {
-        id: "gallery-asymmetric",
-        name: "Asymmetric",
-        description: "Asymmetric gallery with dynamic positioning.",
+        id: "gallery-profile",
+        name: "Uilora Discover",
+        description: "Uilora-branded Pinterest-style masonry gallery — 22 images load in batches via an arrow button, with frosted-glass profile pills on hover and a bottom dissolve fade.",
         category: "Media",
         installType: "cli",
-        tags: ["gallery", "asymmetric", "dynamic", "positioning"],
-        previewUrl: "/Media/ImageGalleries/GalleryAsymmetric",
-        code: {
-            tsx: "",
-        },
+        tags: ["gallery", "masonry", "profile", "pinterest", "hover", "uilora"],
+        previewUrl: "/Media/ImageGalleries/GalleryProfile",
+        code: { tsx: "" },
         usageCode: { tsx: "" },
         dependencies: ["next", "framer-motion"],
         props: [
-            { name: "images", type: "Array<{src: string, width?: string, height?: string, top?: string, left?: string, right?: string, bottom?: string, rotate?: number, label?: string, grayscale?: boolean, decoration?: React.ReactNode}>", default: "[{src: '...', width: '300px', height: '350px', top: '20', left: '10', rotate: -6, label: 'Summer 23', grayscale: true}, ...]", description: "Array of image objects with positioning and styling properties." },
-            { name: "backgroundColor", type: "string", default: "#fcf8f3", description: "Background color (hex, rgb, or hsl)." },
-            { name: "patternUrl", type: "string", default: "https://www.transparenttextures.com/patterns/cubes.png", description: "URL for background pattern texture." },
-            { name: "title", type: "string", default: "COLLAGE", description: "Large background title text." },
-            { name: "titleColor", type: "string", default: "rgba(0,0,0,0.05)", description: "Title text color (hex, rgb, or rgba)." },
+            { name: "images", type: "Array<{src: string, profileName?: string}>", default: "[{src: '...', profileName: 'Sofia Laurent'}, ...]", description: "Array of image objects. Each needs a src URL; profileName is optional and appears in the hover pill." },
+            { name: "backgroundColor", type: "string", default: "#fafafa", description: "Background and fade color — the bottom dissolve gradient is derived from this value automatically." },
         ],
-        whenToUse: "Ideal for creative studios, experimental art projects, and Next.js portfolios that want an organic 'Asymmetric' aesthetic. Use this layout for an engaging 'Collage' experience where content feels 'Mailed' and 'Drafted' by physical sketch lines.",
-        bestPractices: "Maintain scalable component architecture by keeping the sketch colors consistent with your primary palette. Follow React best practices by pairing this with bold, technical typography. Optimize for performance by managed the grid renders.",
-        whyMatters: "Asymmetric collage animations create a sense of digital 'Authenticity' and human touch. This production-ready UI template helpsคุณ build an interface that feels alive and 'Drafted', adding a unique signatures to your brand structure.",
+        whenToUse: "Perfect for Uilora-powered photography portfolios, creative directories, and inspiration boards. The arrow-based batch loading keeps the layout clean while hinting at a rich, deep collection — ideal for showcasing attributed creator content.",
+        bestPractices: "Use images with varied natural aspect ratios to maximise the masonry feel. The bottom fade gradient auto-matches backgroundColor, so keep them in sync. Keep profile names under 20 characters so the pill stays compact.",
+        whyMatters: "The Uilora Discover pattern mirrors the world's most engaging visual platforms — batch loading creates anticipation, profile attribution builds trust, and the bottom dissolve implies infinite depth without any visible pagination chrome.",
         faqs: [
-            { question: "Why 'Asymmetric'?", answer: "The gallery features rough CSS borders and non-uniform positioning (top, left, rotate) to simulate the raw structural honesty of physical art boards." },
-            { question: "Can I adjust textures?", answer: "Absolutely, you can change both the `backgroundColor` and `patternUrl` to create 'Graph-Paper' or 'Industrial' sketch effects." },
-            { question: "Is it mobile responsive?", answer: "The grid spans and organic offsets scale for mobile, ensuring the 'Draft' narrative remains impactful and structural on small screens." }
+            { question: "How does batch loading work?", answer: "The component starts with 12 images and each arrow click reveals 8 more. Once all images are loaded, the arrow swaps for an 'All N creators loaded' confirmation pill." },
+            { question: "How does the profile pill appear?", answer: "Each card uses CSS group-hover transitions — the pill slides in from above with opacity + translateY, a smooth physical reveal with zero JavaScript overhead." },
+            { question: "Can I use real avatar photos?", answer: "Yes — extend the ProfileImage type to include an avatarSrc field and replace the gradient-initial div with an <img> tag inside the pill for real portraits." }
         ],
     },
     {
-        id: "gallery-radial",
-        name: "Radial",
-        description: "Radial gallery with circular arrangement.",
+        id: "gallery-studio",
+        name: "Studio",
+        description: "Editorial photographer studio gallery with click-to-reveal profile panel, central image, and vertical thumbnail strip.",
         category: "Media",
         installType: "cli",
-        tags: ["gallery", "radial", "circular", "arrangement"],
-        previewUrl: "/Media/ImageGalleries/GalleryRadial",
-        code: {
-            tsx: "",
-        },
+        tags: ["gallery", "studio", "editorial", "portfolio", "click"],
+        previewUrl: "/Media/ImageGalleries/GalleryStudio",
+        code: { tsx: "" },
         usageCode: { tsx: "" },
         dependencies: ["next", "framer-motion"],
         props: [
-            { name: "images", type: "string[]", default: "[...array of image URLs]", description: "Array of image source URLs." },
-            { name: "backgroundColor", type: "string", default: "#000000", description: "Background color (hex, rgb, or hsl)." },
-            { name: "radius", type: "number", default: "350", description: "Radius of the circular arrangement in pixels." },
-            { name: "count", type: "number", default: "8", description: "Number of images to display in the circle." },
-            { name: "rotationSpeed", type: "number", default: "0.2", description: "Speed multiplier for scroll-based rotation." },
-            { name: "centerText", type: "string", default: "ORBITAL", description: "Center text displayed in the orb." },
-            { name: "centerSubtext", type: "string", default: "SYSTEM READY", description: "Center subtext displayed below main text." },
-            { name: "borderColor", type: "string", default: "#06b6d4", description: "Border and accent color (hex, rgb, or hsl)." },
+            { name: "items", type: "Array<{image: string, name: string, firstName?: string, lastName?: string, location?: string, description?: string}>", default: "[{image: '...', name: 'MERILLE RAAGAS', firstName: 'MERILLE', lastName: 'RAAGAS', location: 'Australia', description: '...'}, ...]", description: "Array of studio items — each represents a subject with their image and profile details." },
+            { name: "brandName", type: "string", default: "FELIX MELCHNER", description: "Studio or photographer brand name in the top bar." },
+            { name: "backgroundColor", type: "string", default: "#e4e4e7", description: "Outer background color (hex, rgb, or hsl)." },
+            { name: "cardBackground", type: "string", default: "#ffffff", description: "Inner card background color (hex, rgb, or hsl)." },
+            { name: "textColor", type: "string", default: "#18181b", description: "Primary text color (hex, rgb, or hsl)." },
+            { name: "accentColor", type: "string", default: "#18181b", description: "Accent color for selected thumbnail outline and brand dot." },
         ],
-        whenToUse: "Perfect for high-octane brands, gaming labs, and Next.js platforms that want an immersive 'Radial' aesthetic. Use this layout for a tactile experience with organic orbital animations and heat-gradient effects.",
-        bestPractices: "Maintain scalable component architecture by keeping the orb count balanced. Follow React best practices by using Framer Motion for the fluid advection renders. Optimize for performance by managed the gradient intensity.",
-        whyMatters: "Organic liquid aesthetics communicate digital complexity, flow, and digital craft. This production-ready UI template helpsคุณ build an interface that feels advanced and 'Breathing', adding a unique 'Orbital' signature to your project.",
+        whenToUse: "Ideal for photographer portfolios, model agencies, and creative studios that want a sharp editorial 'Studio' aesthetic. The click-based navigation between subjects makes it perfect for showcasing a curated roster.",
+        bestPractices: "Use portrait-oriented images for best visual impact in the center panel. Keep descriptions to 2–3 sentences for readability. The `firstName`/`lastName` split creates the bold stacked-name effect — provide both for best results.",
+        whyMatters: "The studio layout communicates authority and curation — it positions the brand as the curator, not just a container. The thumbnail strip creates an implicit sense of depth and roster, suggesting quality through quantity while keeping focus on a single subject at a time.",
         faqs: [
-            { question: "Is the orbit real?", answer: "The component uses localized SVG filters and spring physics to simulate organic 'Metaballs' that merge and split smoothly as they 'orbit' through the grid." },
-            { question: "Can I adjust radius?", answer: "Absolutely, you can customize both the primary `radius` and the specific `rotationSpeed` to match your brand's specific intensity." },
-            { question: "Is it mobile responsive?", answer: "The liquid flows and orb spans adapt for mobile, ensuring the 'Orbital' feel remains consistent on high-density mobile screens." }
+            { question: "How does the image transition work?", answer: "Clicking a thumbnail triggers AnimatePresence with a crossfade (opacity + subtle scale) on the main image, and a vertical slide on the profile text — all powered by Framer Motion." },
+            { question: "Can I add more than 6 items?", answer: "Yes — the thumbnail strip is scrollable, so you can add as many items as needed. The right panel will overflow-y: auto to accommodate the extra thumbnails." },
+            { question: "Is the layout responsive?", answer: "The layout is optimized for medium to large screens. For mobile, consider rendering only the center image and a horizontal thumbnail scroll by conditionally applying Tailwind classes at the sm breakpoint." }
+        ],
+    },
+    {
+        id: "gallery-vault",
+        name: "Vault",
+        description: "Uilora Vault — immersive 3D spherical gallery powered by Three.js. 180 image planes on a Fibonacci sphere, drag-to-rotate with inertia, hover-to-enlarge, and click-to-lightbox.",
+        category: "Media",
+        installType: "cli",
+        tags: ["gallery", "3d", "three.js", "sphere", "immersive", "vault", "uilora", "interactive"],
+        previewUrl: "/Media/ImageGalleries/GalleryVault",
+        code: { tsx: "" },
+        usageCode: { tsx: "" },
+        dependencies: ["next", "framer-motion", "three"],
+        props: [
+            { name: "images", type: "string[]", default: "[...array of 30 image URLs]", description: "Array of image URLs distributed across 180 sphere planes (cycled if fewer than 180 are provided)." },
+            { name: "backgroundColor", type: "string", default: "#07070d", description: "Background and fog color of the 3D scene — also tints the radial vignette overlay." },
+        ],
+        whenToUse: "Perfect for Uilora-powered art exhibitions, premium portfolio showcases, and creative agencies that want a jaw-dropping 3D presence. The Vault turns any image collection into an immersive 360° gallery that users genuinely want to explore.",
+        bestPractices: "Supply at least 30 high-quality square or landscape images for best sphere density — the component cycles through them to fill all 180 planes. Use a dark backgroundColor for maximum depth and contrast. Three.js loads lazily (28 images initially, 14 per batch), so performance is excellent even on lower-end devices.",
+        whyMatters: "The Vault is a statement piece — it signals that the brand thinks differently. A spherical art exhibition in the browser creates a cinematic first impression that flat galleries simply cannot match, dramatically increasing time-on-page and memorability.",
+        faqs: [
+            { question: "How does the 3D sphere work?", answer: "Images are placed as flat planes at positions calculated using a Fibonacci sphere algorithm, which evenly distributes points across a sphere surface with no clustering at poles — the same technique used in scientific visualization." },
+            { question: "Does it work server-side?", answer: "Three.js is imported dynamically inside a useEffect, so no server-side rendering occurs. The canvas only initializes in the browser, making it fully Next.js compatible." },
+            { question: "How does lazy loading work?", answer: "The first 28 textures load immediately on mount. Every 80 animation frames thereafter, the next batch of 14 textures loads — textures appear smoothly without blocking the render loop." },
+            { question: "Can I navigate to a specific image?", answer: "Click any image plane to open it full-size in a spring-animated lightbox overlay. Press Escape or click outside to close." }
         ],
     },
 ];
-

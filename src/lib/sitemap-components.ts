@@ -34,7 +34,7 @@ import { avatarsComponentsMetadata } from "./SpecialElements/avatars-metadata";
 import { breadcrumbsComponentsMetadata } from "./SpecialElements/breadcrumbs-metadata";
 import { selectorComponentsMetadata } from "./SpecialElements/selector-metadata";
 import { tablesComponentsMetadata } from "./SpecialElements/tables-metadata";
-import { parallaxBackgroundComponentsMetadata } from "./Animations&Motion/parallax-backgrounds-metadata";
+import { parallaxScrollComponentsMetadata } from "./Animations&Motion/parallax-scroll-metadata";
 import { scrollRevealComponentsMetadata } from "./Animations&Motion/scroll-reveals-metadata";
 import { textAnimationComponentsMetadata } from "./Animations&Motion/text-animations-metadata";
 import { magneticCursorComponentsMetadata } from "./Animations&Motion/magnetic-cursor-metadata";
@@ -148,8 +148,8 @@ const getComponentUrlPath = (component: Component): string | null => {
       Selector: "selector",
       Tables: "tables",
       Table: "tables",
-      ParallaxBackgrounds: "parallax-backgrounds",
-      ParallaxBackground: "parallax-backgrounds",
+      ParallaxBackgrounds: "parallax-scroll",
+      ParallaxBackground: "parallax-scroll",
       ScrollReveals: "scroll-reveals",
       ScrollReveal: "scroll-reveals",
       TextAnimations: "text-animations",
@@ -287,7 +287,7 @@ export const componentSitemapGroups: SitemapComponentGroup[] = [
   toSitemapGroup(tablesComponentsMetadata, "special-elements/tables"),
 
   // Animations & Motion
-  toSitemapGroup(parallaxBackgroundComponentsMetadata, "animations-motion/parallax-backgrounds"),
+  toSitemapGroup(parallaxScrollComponentsMetadata, "animations-motion/parallax-scroll"),
   toSitemapGroup(scrollRevealComponentsMetadata, "animations-motion/scroll-reveals"),
   toSitemapGroup(textAnimationComponentsMetadata, "animations-motion/text-animations"),
   toSitemapGroup(magneticCursorComponentsMetadata, "animations-motion/magnetic-cursor"),

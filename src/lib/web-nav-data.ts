@@ -63,7 +63,7 @@ import { gradientPackComponentsMetadata } from "@/src/lib/Backgrounds&Visuals/gr
 import { blurredBackgroundComponentsMetadata } from "@/src/lib/Backgrounds&Visuals/blurred-backgrounds-metadata";
 import { patternBackgroundComponentsMetadata } from "@/src/lib/Backgrounds&Visuals/pattern-backgrounds-metadata";
 import { noiseTextureComponentsMetadata } from "@/src/lib/Backgrounds&Visuals/noise-texture-metadata";
-import { parallaxBackgroundComponentsMetadata } from "@/src/lib/Animations&Motion/parallax-backgrounds-metadata";
+import { parallaxScrollComponentsMetadata } from "@/src/lib/Animations&Motion/parallax-scroll-metadata";
 import { scrollRevealComponentsMetadata } from "@/src/lib/Animations&Motion/scroll-reveals-metadata";
 import { textAnimationComponentsMetadata } from "@/src/lib/Animations&Motion/text-animations-metadata";
 import { magneticCursorComponentsMetadata } from "@/src/lib/Animations&Motion/magnetic-cursor-metadata";
@@ -490,10 +490,10 @@ export const webNavItems = [
                 })),
             },
             {
-                name: "Parallax Backgrounds",
-                href: "/get-started/web/components/animations-motion/parallax-backgrounds",
-                count: `${parallaxBackgroundComponentsMetadata.length}+`,
-                components: parallaxBackgroundComponentsMetadata.map((c) => ({
+                name: "Parallax Scroll",
+                href: "/get-started/web/components/animations-motion/parallax-scroll",
+                count: `${parallaxScrollComponentsMetadata.length}+`,
+                components: parallaxScrollComponentsMetadata.map((c) => ({
                     id: c.id,
                     name: c.name,
                 })),

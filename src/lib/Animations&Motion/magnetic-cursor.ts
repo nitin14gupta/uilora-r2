@@ -3,51 +3,12 @@ import { Component } from "../components-data";
 
 export const magneticCursorComponents: Component[] = [
     {
-        id: "aerodynamic",
-        name: "Aerodynamic",
-        description: "Fluid dynamics smoke trail with realistic particle physics.",
-        category: "Animations & Motion",
-        installType: "cli",
-        tags: ["cursor", "magnetic", "smoke", "particles", "canvas"],
-        previewUrl: "/Animations&Motion/MagneticCursor/Aerodynamic",
-        code: {
-            tsx: getCode("src/components/Animations&Motion/MagneticCursor/tsx/Aerodynamic.tsx"),
-            jsx: getCode("src/components/Animations&Motion/MagneticCursor/jsx/Aerodynamic.jsx"),
-        },
-        usageCode: {
-            tsx: getCode("src/app/(routes)/Animations&Motion/MagneticCursor/Aerodynamic/page.tsx")
-        },
-        dependencies: ["framer-motion", "lucide-react"],
-        props: [
-            { name: "backgroundColor", type: "string", default: "bg-zinc-950", description: "Background color of the component" },
-            { name: "title", type: "string", default: "Aerodynamic", description: "Title text displayed" },
-            { name: "buttonText", type: "string", default: "Hover Me", description: "Text on the hover button" },
-            { name: "fadeOpacity", type: "number", default: "0.2", description: "Opacity of the fade effect" },
-            { name: "velocityThreshold", type: "number", default: "0.5", description: "Velocity threshold for particle spawning" },
-            { name: "spawnChance", type: "number", default: "0.5", description: "Probability of spawning particles" },
-            { name: "particleSizeMin", type: "number", default: "10", description: "Minimum particle size" },
-            { name: "particleSizeMax", type: "number", default: "30", description: "Maximum particle size" },
-            { name: "lifeDecay", type: "number", default: "0.015", description: "Particle life decay rate" },
-            { name: "driftStrength", type: "number", default: "0.05", description: "Strength of particle drift" },
-            { name: "blurAmount", type: "string", default: "blur(8px)", description: "CSS blur amount for particles" },
-            { name: "className", type: "string", default: "", description: "Additional CSS classes" },
-        ],
-        whenToUse: "This production-ready React UI component is ideal for luxury brands, high-end portfolios, and artistic modern web applications. Use this React component when you want to create a fluid, immersive atmosphere that responds to the user's focus and movement.",
-        bestPractices: "Optimize for performance in large-scale applications by being mindful of the `spawnChance`; setting it too high can lead to thousands of particles on screen. Follow React best practices by providing a fallback behavior for users who prefer reduced motion. Maintain scalable component architecture by using the `fadeOpacity` prop to balance visual intensity with system performance.",
-        whyMatters: "Fluid dynamics and particle physics are at the forefront of premium modern UI development. This animated UI component helps you build an interface that feels alive and atmospheric, adding a layer of semantic authority and visual polish to your real-world application architecture.",
-        faqs: [
-            { question: "How does the smoke simulation work?", answer: "The component uses a high-performance canvas-based particle system with realistic velocity decay and drift physics." },
-            { question: "Can I change the smoke color?", answer: "Yes, the particles inherit from the background and fade properties, but custom color mapping can be easily added to the draw loop." },
-            { question: "Is it mobile-friendly?", answer: "Yes, it supports touch move events, though the intensity of particles is automatically throttled to ensure smooth performance on mobile GPUs." }
-        ],
-    },
-    {
         id: "molten",
         name: "Molten Core",
-        description: "Additive thermal particles creating glowing lava effect.",
+        description: "Fire particle burst trails your cursor with glowing ember physics.",
         category: "Animations & Motion",
         installType: "cli",
-        tags: ["cursor", "magnetic", "molten", "lava", "glow"],
+        tags: ["cursor", "magnetic", "fire", "particles", "canvas"],
         previewUrl: "/Animations&Motion/MagneticCursor/Molten",
         code: {
             tsx: getCode("src/components/Animations&Motion/MagneticCursor/tsx/Molten.tsx"),
@@ -56,33 +17,26 @@ export const magneticCursorComponents: Component[] = [
         usageCode: {
             tsx: getCode("src/app/(routes)/Animations&Motion/MagneticCursor/Molten/page.tsx")
         },
-        dependencies: ["framer-motion", "lucide-react"],
+        dependencies: ["next"],
         props: [
-            { name: "backgroundColor", type: "string", default: "bg-zinc-950", description: "Background color of the component" },
-            { name: "title", type: "string", default: "Molten Core", description: "Title text displayed" },
-            { name: "buttonText", type: "string", default: "Hover Me", description: "Text on the hover button" },
-            { name: "particlesPerFrame", type: "number", default: "3", description: "Number of particles spawned per frame" },
-            { name: "velocityThreshold", type: "number", default: "0.5", description: "Velocity threshold for particle spawning" },
-            { name: "lifeDecay", type: "number", default: "0.02", description: "Particle life decay rate" },
-            { name: "sizeDecay", type: "number", default: "0.95", description: "Particle size decay rate" },
-            { name: "className", type: "string", default: "", description: "Additional CSS classes" },
+            { name: "color", type: "string", default: "#ff6600", description: "Base color of the fire particles" },
+            { name: "particlesPerFrame", type: "number", default: "3", description: "How many particles spawn per animation frame" },
         ],
-        whenToUse: "Ideal for high-energy tech brands, gaming platforms, and experimental Next.js landing pages. This customizable UI component is perfect for creating a 'hot' or 'active' focal point that follows the user's cursor with an additive glow effect.",
-        bestPractices: "Follow React best practices by ensuring the `particlesPerFrame` counts are optimized for standard 60fps refresh rates. Maintain consistent spacing within your design system by adjusting the `velocityThreshold` to match the expected scroll and move speed of your users. Optimize for performance by keeping particle `lifeDecay` values relatively high.",
-        whyMatters: "Thermal and glowing effects add a level of visual weight that is hard to achieve with static elements. This reusable React component gives developers a robust way to implement complex particle blending, helping you build a real-world application architecture that feels dynamic and high-performance.",
+        whenToUse: "Perfect for dark hero sections, gaming sites, and high-energy landing pages where you want the cursor to feel like it's on fire.",
+        bestPractices: "Works best on dark backgrounds where the additive blend mode (lighter) can glow. Keep particlesPerFrame between 2-5 for smooth performance.",
+        whyMatters: "Particle effects driven by cursor velocity create a sense of physical energy that makes the interface feel viscerally alive.",
         faqs: [
-            { question: "Does it support custom shapes?", answer: "The current implementation uses circular additive particles, which are the most efficient for creating a soft 'molten' glow." },
-            { question: "Is the glow effect adjustable?", answer: "Yes, by adjusting the `particlesPerFrame` and `sizeDecay`, you can create anything from a subtle ember trail to a massive solar flare." },
-            { question: "Can I use it on buttons?", answer: "Absolutely! The component is designed to be scoped or global, and works perfectly as a hover-triggered effect for high-impact buttons." }
+            { question: "Does it work on mobile?", answer: "The canvas tracks mousemove — on touch devices the effect won't appear, but the hero section still renders." },
+            { question: "Does it need any library?", answer: "No — pure canvas API with requestAnimationFrame. Zero dependencies." }
         ],
     },
     {
         id: "string",
         name: "String Theory",
-        description: "Verlet integration rope physics with smooth following motion.",
+        description: "An elastic thread trails your cursor like a snake through space.",
         category: "Animations & Motion",
         installType: "cli",
-        tags: ["cursor", "magnetic", "string", "rope", "physics"],
+        tags: ["cursor", "magnetic", "string", "trail", "elastic"],
         previewUrl: "/Animations&Motion/MagneticCursor/String",
         code: {
             tsx: getCode("src/components/Animations&Motion/MagneticCursor/tsx/String.tsx"),
@@ -91,35 +45,26 @@ export const magneticCursorComponents: Component[] = [
         usageCode: {
             tsx: getCode("src/app/(routes)/Animations&Motion/MagneticCursor/String/page.tsx")
         },
-        dependencies: ["framer-motion", "lucide-react"],
+        dependencies: ["next"],
         props: [
-            { name: "backgroundColor", type: "string", default: "bg-zinc-950", description: "Background color of the component" },
-            { name: "title", type: "string", default: "String Theory", description: "Title text displayed" },
-            { name: "buttonText", type: "string", default: "Hover Me", description: "Text on the hover button" },
-            { name: "particleCount", type: "number", default: "20", description: "Number of particles in the string" },
-            { name: "inactiveColor", type: "string", default: "#e4e4e7", description: "Color when inactive" },
-            { name: "activeColor", type: "string", default: "#f472b6", description: "Color when active" },
-            { name: "inactiveWidth", type: "number", default: "2", description: "Line width when inactive" },
-            { name: "activeWidth", type: "number", default: "4", description: "Line width when active" },
-            { name: "followSpeed", type: "number", default: "0.4", description: "Speed at which particles follow cursor" },
-            { name: "className", type: "string", default: "", description: "Additional CSS classes" },
+            { name: "color", type: "string", default: "#f472b6", description: "Color of the trailing string" },
+            { name: "trailLength", type: "number", default: "20", description: "Number of points in the string — more points = longer tail" },
         ],
-        whenToUse: "Excellent for creative agencies, physics-themed projects, and modern web applications that want a tactile, elastic feel. Use this React component when building interactive headers or dividers where you want a physical string following the user's movement.",
-        bestPractices: "Maintain scalable component architecture by keeping the `particleCount` between 15 and 25 for a smooth, rope-like appearance. Follow React best practices by using high-contrast colors for the `activeColor` to ensure the string's visibility over various backgrounds. Optimize for performance in large-scale applications by using the `followSpeed` prop to manage computational overhead.",
-        whyMatters: "Verlet integration is a core concept in physical animation that adds a layer of realism to digital interfaces. This production-ready component helps you implement high-quality rope physics in your real-world application architecture, making the UI feel more grounded and responsive.",
+        whenToUse: "Great for creative portfolios, design tools, and any site that wants a fluid, organic cursor effect that doesn't overwhelm the content.",
+        bestPractices: "Keep trailLength between 10-30. Higher values create a longer, more serpentine string. Brightens to white on button hover automatically.",
+        whyMatters: "The elastic string creates a sense of physical connection between cursor and pointer that feels genuinely tactile.",
         faqs: [
-            { question: "How does the rope physics work?", answer: "The component uses Verlet integration to calculate constraints between particles, creating a realistic swinging and stretching motion." },
-            { question: "Can I change the tension?", answer: "Yes, by adjusting the `followSpeed` and the number of particles, you can make the string feel like anything from a stiff rod to a flexible piece of silk." },
-            { question: "Is it responsive?", answer: "Yes, the physics simulation is independent of viewport size, ensuring a consistent 'string' behavior on all devices." }
+            { question: "Does it interact with hover states?", answer: "Yes — hovering the Get Started button brightens the string to white and thickens it." },
+            { question: "Can I use multiple colors?", answer: "The current implementation uses one stroke color. For multi-color gradient strings, modify the strokeStyle in source." }
         ],
     },
     {
         id: "shatter",
         name: "Crystalline",
-        description: "Physics-based fragmentation with rotating crystal shards.",
+        description: "Crystal shards burst from the cursor on fast movement, fall with gravity.",
         category: "Animations & Motion",
         installType: "cli",
-        tags: ["cursor", "magnetic", "shatter", "crystal", "particles"],
+        tags: ["cursor", "magnetic", "shatter", "particles", "canvas"],
         previewUrl: "/Animations&Motion/MagneticCursor/Shatter",
         code: {
             tsx: getCode("src/components/Animations&Motion/MagneticCursor/tsx/Shatter.tsx"),
@@ -128,151 +73,26 @@ export const magneticCursorComponents: Component[] = [
         usageCode: {
             tsx: getCode("src/app/(routes)/Animations&Motion/MagneticCursor/Shatter/page.tsx")
         },
-        dependencies: ["framer-motion", "lucide-react"],
+        dependencies: ["next"],
         props: [
-            { name: "backgroundColor", type: "string", default: "bg-zinc-950", description: "Background color of the component" },
-            { name: "title", type: "string", default: "Crystalline", description: "Title text displayed" },
-            { name: "subtitle", type: "string", default: "Move quickly to see shards", description: "Subtitle text displayed" },
-            { name: "velocityThreshold", type: "number", default: "5", description: "Velocity threshold for shard creation" },
-            { name: "particleColor", type: "string", default: "rgba(255, 255, 255, 1)", description: "Color of the shard particles" },
-            { name: "sizeMin", type: "number", default: "2", description: "Minimum shard size" },
-            { name: "sizeMax", type: "number", default: "8", description: "Maximum shard size" },
-            { name: "lifeDecay", type: "number", default: "0.02", description: "Shard life decay rate" },
-            { name: "gravity", type: "number", default: "2", description: "Gravity effect on shards" },
-            { name: "spinRange", type: "[number, number]", default: "[-5, 5]", description: "Range of spin rotation" },
-            { name: "angleRange", type: "[number, number]", default: "[0, 360]", description: "Range of initial angles" },
-            { name: "className", type: "string", default: "", description: "Additional CSS classes" },
+            { name: "color", type: "string", default: "#ffffff", description: "Color of the crystal shards" },
+            { name: "velocityThreshold", type: "number", default: "5", description: "Cursor speed required to spawn shards — lower = more sensitive" },
         ],
-        whenToUse: "Perfect for tech-focused portfolios, digital product launches, and Next.js applications with a 'crystalline' or 'geometric' design system. Use this React component to add a sharp, high-energy fragmentation effect that triggers when the user moves their cursor quickly.",
-        bestPractices: "Optimize for performance by ensuring the `velocityThreshold` is high enough so shards only appear during intentional quick movements. To follow React best practices, use the `gravity` prop to ensure shards fall off-screen naturally without cluttering the viewport. Maintain consistent spacing within your design system by keeping the `sizeMax` within a professional range.",
-        whyMatters: "Crystalline and fragmentation effects are at the forefront of modern UI design for technical brands. This animated UI component helps شما build an interface that feels reactive and precise, adding semantic authority and visual depth to your real-world application architecture.",
+        whenToUse: "Ideal for luxury brands, tech showcases, and any site where you want an 'explosive' cursor that rewards fast, confident movement.",
+        bestPractices: "Keep velocityThreshold between 3-10. Lower values spawn shards more easily. Use light shard colors on dark backgrounds for maximum contrast.",
+        whyMatters: "Velocity-triggered effects create a reward loop — users move faster to see more shards, naturally engaging more deeply with the page.",
         faqs: [
-            { question: "Can I use custom icons as shards?", answer: "The current version uses geometric polygons for performance, but the drawing loop can be extended to support custom SVG paths or icons." },
-            { question: "What triggers the shatter effect?", answer: "The effect is triggered by mouse velocity; once the movement speed exceeds the `velocityThreshold`, new shards are instantiated." },
-            { question: "Is the rotation random?", answer: "Yes, each shard is assigned a random spin from the `spinRange` to ensure the fragmentation looks organic and unscripted." }
-        ],
-    },
-    {
-        id: "basic",
-        name: "Spring Physics",
-        description: "Smooth magnetic spring with size adaptation on hover.",
-        category: "Animations & Motion",
-        installType: "cli",
-        tags: ["cursor", "magnetic", "spring", "smooth", "dom"],
-        previewUrl: "/Animations&Motion/MagneticCursor/Basic",
-        code: {
-            tsx: getCode("src/components/Animations&Motion/MagneticCursor/tsx/Basic.tsx"),
-            jsx: getCode("src/components/Animations&Motion/MagneticCursor/jsx/Basic.jsx"),
-        },
-        usageCode: {
-            tsx: getCode("src/app/(routes)/Animations&Motion/MagneticCursor/Basic/page.tsx")
-        },
-        dependencies: ["framer-motion", "lucide-react"],
-        props: [
-            { name: "backgroundColor", type: "string", default: "bg-zinc-950", description: "Background color of the component" },
-            { name: "title", type: "string", default: "Spring Physics", description: "Title text displayed" },
-            { name: "buttonText", type: "string", default: "Hover Me", description: "Text on the hover button" },
-            { name: "inactiveSize", type: "number", default: "20", description: "Size of cursor when inactive" },
-            { name: "activeSize", type: "number", default: "80", description: "Size of cursor when active" },
-            { name: "springDamping", type: "number", default: "25", description: "Spring animation damping" },
-            { name: "springStiffness", type: "number", default: "400", description: "Spring animation stiffness" },
-            { name: "borderColor", type: "string", default: "border-zinc-500", description: "Border color of the cursor" },
-            { name: "cursorBackgroundColor", type: "string", default: "bg-white", description: "Background color of the cursor" },
-            { name: "className", type: "string", default: "", description: "Additional CSS classes" },
-        ],
-        whenToUse: "Ideal for clean, minimalist modern web applications that want to add a high-end feel to their navigation and buttons. Use this React component when you want a cursor that gently 'sticks' to interactive elements, providing clear visual feedback.",
-        bestPractices: "Follow React best practices by setting the `activeSize` to a value that frames the hovered element without obscuring it. Maintain scalable component architecture by using the `springStiffness` and `springDamping` props to match the 'weight' of other animations in your design system. Optimize for performance by using standard DOM elements for the cursor.",
-        whyMatters: "Spring physics are essential for creating interfaces that feel 'real' and responsive. This production-ready component helps you build a more tactile navigation experience, adding a layer of semantic authority and premium polish to your real-world application architecture.",
-        faqs: [
-            { question: "Can I use it with any HTML element?", answer: "Yes, the component uses a 'magnetic' class system that allows it to interact with any element on the page that carries the specified trigger class." },
-            { question: "Is the spring animation adjustable?", answer: "Absolutely! You have full control over the stiffness and damping to make the cursor feel either very snappy or smooth and liquid." },
-            { question: "Does it support custom shapes?", answer: "While the default is a circle, the border-radius can be easily modified via the `className` or `style` props to support squares or rounded-rects." }
-        ],
-    },
-    {
-        id: "fluid",
-        name: "Metaball Goo",
-        description: "Liquid blob simulation with SVG goo filter creating metaball effect.",
-        category: "Animations & Motion",
-        installType: "cli",
-        tags: ["cursor", "magnetic", "fluid", "goo", "metaball"],
-        previewUrl: "/Animations&Motion/MagneticCursor/Fluid",
-        code: {
-            tsx: getCode("src/components/Animations&Motion/MagneticCursor/tsx/Fluid.tsx"),
-            jsx: getCode("src/components/Animations&Motion/MagneticCursor/jsx/Fluid.jsx"),
-        },
-        usageCode: {
-            tsx: getCode("src/app/(routes)/Animations&Motion/MagneticCursor/Fluid/page.tsx")
-        },
-        dependencies: ["framer-motion", "lucide-react"],
-        props: [
-            { name: "backgroundColor", type: "string", default: "bg-zinc-950", description: "Background color of the component" },
-            { name: "title", type: "string", default: "Metaball Goo", description: "Title text displayed" },
-            { name: "buttonText", type: "string", default: "Hover Me", description: "Text on the hover button" },
-            { name: "mainDamping", type: "number", default: "30", description: "Main blob spring damping" },
-            { name: "mainStiffness", type: "number", default: "500", description: "Main blob spring stiffness" },
-            { name: "lagDamping", type: "number", default: "15", description: "Lag blob spring damping" },
-            { name: "lagStiffness", type: "number", default: "150", description: "Lag blob spring stiffness" },
-            { name: "inactiveSize", type: "number", default: "30", description: "Size of blobs when inactive" },
-            { name: "activeSize", type: "number", default: "100", description: "Size of blobs when active" },
-            { name: "blob1Color", type: "string", default: "bg-indigo-500", description: "Color of the first blob" },
-            { name: "blob2Color", type: "string", default: "bg-indigo-400", description: "Color of the second blob" },
-            { name: "className", type: "string", default: "", description: "Additional CSS classes" },
-        ],
-        whenToUse: "Excellent for creative agencies, liquid-themed branding, and experimental modern web applications. This production-ready React UI component is perfect for creating a 'gooey' interaction where the cursor appears to split or merge with other elements.",
-        bestPractices: "Maintain consistent spacing within your design system by ensuring the `inactiveSize` is small enough to not distract from the content. Follow React best practices by using the `lagStiffness` to create a beautiful, organic following motion. Optimize for performance by ensuring the SVG filter is only applied to the cursor container.",
-        whyMatters: "Metaballs and gooey filters are a hallmark of organic modern UI design. This customizable UI component gives you a production-level implementation of complex SVG filters, helping you build a real-world application architecture that feels fluid and cohesive.",
-        faqs: [
-            { question: "How does the gooey effect work?", answer: "It uses a combination of blur and high-contrast color matrix filters in SVG to 'melt' separate circles into a single fluid shape." },
-            { question: "Can I add more blobs for a trail?", answer: "The current implementation uses two blobs for a clean 'meta-drag' effect, but the system can be extended to support a full trail of liquid segments." },
-            { question: "Does it work on mobile?", answer: "Yes, it supports standard touch events, though the gooey effect is most striking when paired with precise mouse movement." }
-        ],
-    },
-    {
-        id: "exclusion",
-        name: "Negative Space",
-        description: "Inverted color effect using mix-blend-exclusion.",
-        category: "Animations & Motion",
-        installType: "cli",
-        tags: ["cursor", "magnetic", "exclusion", "invert", "blend"],
-        previewUrl: "/Animations&Motion/MagneticCursor/Exclusion",
-        code: {
-            tsx: getCode("src/components/Animations&Motion/MagneticCursor/tsx/Exclusion.tsx"),
-            jsx: getCode("src/components/Animations&Motion/MagneticCursor/jsx/Exclusion.jsx"),
-        },
-        usageCode: {
-            tsx: getCode("src/app/(routes)/Animations&Motion/MagneticCursor/Exclusion/page.tsx")
-        },
-        dependencies: ["framer-motion", "lucide-react"],
-        props: [
-            { name: "backgroundColor", type: "string", default: "bg-zinc-950", description: "Background color of the component" },
-            { name: "title", type: "string", default: "Negative Space", description: "Title text displayed" },
-            { name: "buttonText", type: "string", default: "Hover Me", description: "Text on the hover button" },
-            { name: "size", type: "string", default: "w-8 h-8", description: "Size of the cursor" },
-            { name: "inactiveScale", type: "number", default: "1", description: "Scale when inactive" },
-            { name: "activeScale", type: "number", default: "3", description: "Scale when active" },
-            { name: "springDamping", type: "number", default: "25", description: "Spring animation damping" },
-            { name: "springStiffness", type: "number", default: "400", description: "Spring animation stiffness" },
-            { name: "transitionDuration", type: "number", default: "0.3", description: "Transition duration in seconds" },
-            { name: "cursorBackgroundColor", type: "string", default: "bg-white", description: "Background color of the cursor" },
-            { name: "className", type: "string", default: "", description: "Additional CSS classes" },
-        ],
-        whenToUse: "Perfect for high-contrast portfolios, fashion-forward Next.js landing pages, and landing pages with large, layered imagery. Use this React component to create an inverted color reveal that makes the cursor visible over any background color.",
-        bestPractices: "Optimize for performance in large-scale applications by keeping the cursor size relatively small, as `mix-blend-mode` can be heavy on some mobile browsers. Follow React best practices by using high-contrast colors (like white on black) for the best inversion effect. Maintain scalable component architecture by utilizing the `springStiffness` to match your brand's timing.",
-        whyMatters: "Exclusion and inversion effects are at the forefront of 'high-fashion' modern UI design. This reusable React component provides a simple yet effective way to manage cursor visibility across complex, colorful layouts, adding visual premium to your real-world application architecture.",
-        faqs: [
-            { question: "How does the color inversion work?", answer: "The component uses the CSS `mix-blend-mode: exclusion` property, which subtracts one color from another to create a high-contrast negative effect." },
-            { question: "Does it work on colored backgrounds?", answer: "Yes! It will invert whatever color is underneath it, creating striking combinations like yellow on blue or pink on green." },
-            { question: "Is it responsive?", answer: "Absolutely. The cursor size and scale are fully customizable via props to ensure a clear interaction on all devices." }
+            { question: "When do shards appear?", answer: "Only when cursor velocity exceeds the velocityThreshold. Slow movement produces nothing — fast movement shatters." },
+            { question: "Do shards have gravity?", answer: "Yes — shards fall downward and spin as they fade out." }
         ],
     },
     {
         id: "echo",
         name: "Snake Trail",
-        description: "Lagging echo particles creating a snake-like trail.",
+        description: "A living kinematic snake with sine-wave slither follows your pointer.",
         category: "Animations & Motion",
         installType: "cli",
-        tags: ["cursor", "magnetic", "echo", "trail", "snake"],
+        tags: ["cursor", "magnetic", "snake", "kinematic", "canvas"],
         previewUrl: "/Animations&Motion/MagneticCursor/Echo",
         code: {
             tsx: getCode("src/components/Animations&Motion/MagneticCursor/tsx/Echo.tsx"),
@@ -281,37 +101,101 @@ export const magneticCursorComponents: Component[] = [
         usageCode: {
             tsx: getCode("src/app/(routes)/Animations&Motion/MagneticCursor/Echo/page.tsx")
         },
-        dependencies: ["framer-motion", "lucide-react"],
+        dependencies: ["next"],
         props: [
-            { name: "segmentCount", type: "number", default: "32", description: "Number of segments in the snake" },
-            { name: "segmentSpacing", type: "number", default: "8", description: "Spacing between segments" },
-            { name: "boneLength", type: "number", default: "12", description: "Length of each bone segment" },
-            { name: "headEasing", type: "number", default: "0.25", description: "Easing factor for head movement" },
-            { name: "bodyEasing", type: "number", default: "0.9", description: "Easing factor for body movement" },
-            { name: "waveAmplitude", type: "number", default: "2.2", description: "Amplitude of the wave motion" },
-            { name: "waveFrequency", type: "number", default: "6", description: "Frequency of the wave motion" },
-            { name: "waveSpeed", type: "number", default: "0.5", description: "Speed of the wave motion" },
-            { name: "headColor", type: "string", default: "#9be870", description: "Color of the head segment" },
-            { name: "bodyColorStart", type: "string", default: "rgba(188,19,254,0.85)", description: "Starting color of body segments" },
-            { name: "bodyColorEnd", type: "string", default: "rgba(188,19,254,0.15)", description: "Ending color of body segments" },
-            { name: "strokeColor", type: "string", default: "rgba(125,18,255,0.5)", description: "Color of the stroke" },
-            { name: "strokeWidth", type: "number", default: "1.2", description: "Width of the stroke" },
-            { name: "headWidth", type: "number", default: "14", description: "Width of the head segment" },
-            { name: "taperFactor", type: "number", default: "0.85", description: "Taper factor for body segments" },
-            { name: "eyeColor", type: "string", default: "#2d2a2e", description: "Color of the eyes" },
-            { name: "eyeSize", type: "number", default: "2.2", description: "Size of the eyes" },
-            { name: "eyeOffsetX", type: "number", default: "6", description: "X offset of the eyes" },
-            { name: "eyeOffsetY", type: "number", default: "4", description: "Y offset of the eyes" },
-            { name: "className", type: "string", default: "", description: "Additional CSS classes" },
+            { name: "color", type: "string", default: "#a855f7", description: "Body color of the snake" },
+            { name: "segmentCount", type: "number", default: "32", description: "Number of body segments — more = longer snake" },
         ],
-        whenToUse: "Ideal for experimental brands, biological/organic themes, and high-impact cinematic web experiences. Use this React component when you want a cursor that feels like a 'living creature' or a physics-driven snake following the user's path.",
-        bestPractices: "Optimize for performance by ensuring the `segmentCount` is tailored to the target device's capability (20-32 is usually safe). Follow React best practices by using the `waveAmplitude` to add subtle life to the snake without making it flickery. Maintain scalable component architecture by using the `taperFactor` to create a natural, organic tail effect.",
-        whyMatters: "Kinematic chains and wave motion are powerful tools for building immersive modern UI development experiences. This production-ready component helpsคุณ implement complex multi-segment physics, adding incredible visual authority and surprise to your real-world application architecture.",
+        whenToUse: "Perfect for experimental brands, bio-tech sites, gaming, and any context where a living creature cursor adds memorable personality.",
+        bestPractices: "Keep segmentCount between 20-48. The snake uses mix-blend-screen so it glows beautifully over dark backgrounds. Desktop only — requires pointer:fine.",
+        whyMatters: "A kinematic snake is one of the most technically impressive cursor effects — it demonstrates organic physics that static cursors simply cannot achieve.",
         faqs: [
-            { question: "How does the snake movement work?", answer: "The component uses a kinematic chain where each segment follows the previous one with a slight lag and a sinusoidal wave offset." },
-            { question: "Can I change the 'personality' of the snake?", answer: "Yes, by adjusting the `waveFrequency` and `waveSpeed`, you can make the snake move slowly and gracefully or rapidly and energetically." },
-            { question: "Is the tail tapered?", answer: "Yes, the `taperFactor` prop ensures that segments get progressively smaller as they move toward the end of the chain." }
+            { question: "Does it work on mobile?", answer: "No — it requires a fine pointer (mouse). On touch devices the snake is hidden and the hero section renders normally." },
+            { question: "Why does the head glow lime green?", answer: "The head uses a contrasting #a3e635 color so it's visually distinct from the body. This can be changed in source." }
+        ],
+    },
+    {
+        id: "chroma-trail",
+        name: "Chroma Trail",
+        description: "A hue-cycling rainbow comet trails every movement of your cursor.",
+        category: "Animations & Motion",
+        installType: "cli",
+        tags: ["cursor", "trail", "rainbow", "hue", "canvas"],
+        previewUrl: "/Animations&Motion/MagneticCursor/ChromaTrail",
+        code: {
+            tsx: getCode("src/components/Animations&Motion/MagneticCursor/tsx/ChromaTrail.tsx"),
+            jsx: getCode("src/components/Animations&Motion/MagneticCursor/jsx/ChromaTrail.jsx"),
+        },
+        usageCode: {
+            tsx: getCode("src/app/(routes)/Animations&Motion/MagneticCursor/ChromaTrail/page.tsx")
+        },
+        dependencies: ["next"],
+        props: [
+            { name: "speed", type: "number", default: "2", description: "How fast the hue cycles per frame — higher = faster color rotation" },
+            { name: "trailLength", type: "number", default: "28", description: "Number of trail points — more = longer comet tail" },
+        ],
+        whenToUse: "Perfect for creative portfolios, music visualizers, and any site that wants an instantly eye-catching cursor that makes every mouse movement feel like painting.",
+        bestPractices: "Keep speed between 1-4 for smooth cycling. Works best on dark backgrounds. Set trailLength to 20-40 for optimal performance.",
+        whyMatters: "A constantly shifting hue trail is one of the most visually arresting cursor effects — impossible to ignore and impossible to mistake for a default cursor.",
+        faqs: [
+            { question: "Does it slow down performance?", answer: "No — it draws a small array of circles per frame. Even with 40 trail points, the GPU cost is negligible." },
+            { question: "Can I slow the color cycle?", answer: "Yes — set speed to 0.5 or 1 for a slow, mesmerizing shift. Set to 5+ for a rapid disco effect." }
+        ],
+    },
+    {
+        id: "ripple-cursor",
+        name: "Ripple Cursor",
+        description: "Concentric rings expand from the cursor like water ripples with every move.",
+        category: "Animations & Motion",
+        installType: "cli",
+        tags: ["cursor", "ripple", "rings", "water", "canvas"],
+        previewUrl: "/Animations&Motion/MagneticCursor/RippleCursor",
+        code: {
+            tsx: getCode("src/components/Animations&Motion/MagneticCursor/tsx/RippleCursor.tsx"),
+            jsx: getCode("src/components/Animations&Motion/MagneticCursor/jsx/RippleCursor.jsx"),
+        },
+        usageCode: {
+            tsx: getCode("src/app/(routes)/Animations&Motion/MagneticCursor/RippleCursor/page.tsx")
+        },
+        dependencies: ["next"],
+        props: [
+            { name: "color", type: "string", default: "#38bdf8", description: "Color of the ripple rings" },
+            { name: "maxRings", type: "number", default: "12", description: "Maximum concurrent rings on screen at once" },
+        ],
+        whenToUse: "Great for clean SaaS products, fintech, and any interface where elegance matters. The ripple gives precise cursor feedback without being distracting.",
+        bestPractices: "Keep maxRings between 8-16. Works on both dark and light backgrounds — adjust color for contrast. A small dot is drawn at the exact cursor position for precision.",
+        whyMatters: "Water ripples are universally understood as a reaction to touch — using them on cursor movement creates an unconscious sense of physical interaction with the screen.",
+        faqs: [
+            { question: "Do rings appear on every pixel of movement?", answer: "No — rings only spawn when the cursor moves more than 6px from the last ring origin, preventing ring flooding." },
+            { question: "Does it work on click too?", answer: "Currently movement-triggered only. Adding click triggers requires a small addEventListener('click') addition in source." }
+        ],
+    },
+    {
+        id: "glow-orb",
+        name: "Glow Orb",
+        description: "A soft ambient light orb follows the cursor with gentle easing — the Vercel effect.",
+        category: "Animations & Motion",
+        installType: "cli",
+        tags: ["cursor", "glow", "ambient", "light", "orb"],
+        previewUrl: "/Animations&Motion/MagneticCursor/GlowOrb",
+        code: {
+            tsx: getCode("src/components/Animations&Motion/MagneticCursor/tsx/GlowOrb.tsx"),
+            jsx: getCode("src/components/Animations&Motion/MagneticCursor/jsx/GlowOrb.jsx"),
+        },
+        usageCode: {
+            tsx: getCode("src/app/(routes)/Animations&Motion/MagneticCursor/GlowOrb/page.tsx")
+        },
+        dependencies: ["next"],
+        props: [
+            { name: "color", type: "string", default: "#818cf8", description: "Color of the ambient glow" },
+            { name: "size", type: "number", default: "520", description: "Diameter of the glow orb in pixels" },
+        ],
+        whenToUse: "The go-to effect for premium SaaS hero sections — used by Vercel, Linear, Raycast, and others. Adds subtle depth without distracting from content.",
+        bestPractices: "Keep size between 400-700. Subtle colors (low saturation or low opacity) work best — the effect should feel like ambience, not spotlight. Use alongside a small dot cursor.",
+        whyMatters: "Ambient cursor glow is one of the most widely adopted techniques in premium UI design — it makes dark hero sections feel three-dimensional and warm.",
+        faqs: [
+            { question: "Why does it lag behind the cursor?", answer: "Intentionally — the 0.06 easing factor creates a soft, organic follow that feels premium. The small dot follows precisely." },
+            { question: "Does it need canvas?", answer: "No — it's a pure div with a radial-gradient background and requestAnimationFrame position updates. No canvas overhead." }
         ],
     },
 ];
-

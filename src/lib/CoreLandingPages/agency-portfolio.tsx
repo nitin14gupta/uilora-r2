@@ -249,8 +249,8 @@ export const agencyPortfolioComponents: Component[] = [
         tags: ["commerce", "hud", "interface", "ecommerce"],
         previewUrl: "/CoreLandingPages/AgencyPortfolio/COMMERCE_HUD",
         code: {
-            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/Commerce_HUD.tsx"),
-            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/Commerce_HUD.jsx"),
+            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/COMMERCE_HUD.tsx"),
+            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/COMMERCE_HUD.jsx"),
         },
         usageCode: {
             tsx: getCode("src/app/(routes)/CoreLandingPages/AgencyPortfolio/COMMERCE_HUD/page.tsx"),
@@ -299,8 +299,8 @@ export const agencyPortfolioComponents: Component[] = [
         tags: ["executive", "professional", "corporate", "sophisticated"],
         previewUrl: "/CoreLandingPages/AgencyPortfolio/EXECUTIVE",
         code: {
-            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/Executive.tsx"),
-            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/Executive.jsx"),
+            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/EXECUTIVE.tsx"),
+            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/EXECUTIVE.jsx"),
         },
         usageCode: {
             tsx: getCode("src/app/(routes)/CoreLandingPages/AgencyPortfolio/EXECUTIVE/page.tsx"),
@@ -399,8 +399,8 @@ export const agencyPortfolioComponents: Component[] = [
         tags: ["maison", "digital", "elegant", "luxury"],
         previewUrl: "/CoreLandingPages/AgencyPortfolio/MAISONDIGITAL",
         code: {
-            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/MaisonDigital.tsx"),
-            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/MaisonDigital.jsx"),
+            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/MAISONDIGITAL.tsx"),
+            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/MAISONDIGITAL.jsx"),
         },
         usageCode: {
             tsx: getCode("src/app/(routes)/CoreLandingPages/AgencyPortfolio/MAISONDIGITAL/page.tsx"),
@@ -555,8 +555,8 @@ export const agencyPortfolioComponents: Component[] = [
         tags: ["operator", "os", "technical", "interface"],
         previewUrl: "/CoreLandingPages/AgencyPortfolio/OPERATOROS",
         code: {
-            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/OperatorOS.tsx"),
-            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/OperatorOS.jsx"),
+            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/OPERATOROS.tsx"),
+            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/OPERATOROS.jsx"),
         },
         usageCode: {
             tsx: getCode("src/app/(routes)/CoreLandingPages/AgencyPortfolio/OPERATOROS/page.tsx"),
@@ -655,8 +655,8 @@ export const agencyPortfolioComponents: Component[] = [
         tags: ["prism", "light", "refraction", "colorful"],
         previewUrl: "/CoreLandingPages/AgencyPortfolio/PRISMOS",
         code: {
-            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/PrismOS.tsx"),
-            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/PrismOS.jsx"),
+            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/PRISMOS.tsx"),
+            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/PRISMOS.jsx"),
         },
         usageCode: {
             tsx: getCode("src/app/(routes)/CoreLandingPages/AgencyPortfolio/PRISMOS/page.tsx"),
@@ -711,8 +711,8 @@ export const agencyPortfolioComponents: Component[] = [
         tags: ["quantum", "analytics", "data", "scientific"],
         previewUrl: "/CoreLandingPages/AgencyPortfolio/QUANTUMANALYTICS",
         code: {
-            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/QuantumAnalytics.tsx"),
-            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/QuantumAnalytics.jsx"),
+            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/QUANTUMANALYTICS.tsx"),
+            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/QUANTUMANALYTICS.jsx"),
         },
         usageCode: {
             tsx: getCode("src/app/(routes)/CoreLandingPages/AgencyPortfolio/QUANTUMANALYTICS/page.tsx"),
@@ -761,8 +761,8 @@ export const agencyPortfolioComponents: Component[] = [
         tags: ["social", "pulse", "network", "media"],
         previewUrl: "/CoreLandingPages/AgencyPortfolio/SOCIALPULSE",
         code: {
-            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/SocialPulse.tsx"),
-            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/SocialPulse.jsx"),
+            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/SOCIALPULSE.tsx"),
+            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/SOCIALPULSE.jsx"),
         },
         usageCode: {
             tsx: getCode("src/app/(routes)/CoreLandingPages/AgencyPortfolio/SOCIALPULSE/page.tsx"),
@@ -911,8 +911,8 @@ export const agencyPortfolioComponents: Component[] = [
         tags: ["mainframe", "retro", "computing", "vintage"],
         previewUrl: "/CoreLandingPages/AgencyPortfolio/THEMAINFRAME",
         code: {
-            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/TheMainframe.tsx"),
-            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/TheMainframe.jsx"),
+            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/THEMAINFRAME.tsx"),
+            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/THEMAINFRAME.jsx"),
         },
         usageCode: {
             tsx: getCode("src/app/(routes)/CoreLandingPages/AgencyPortfolio/THEMAINFRAME/page.tsx"),
@@ -961,8 +961,8 @@ export const agencyPortfolioComponents: Component[] = [
         tags: ["oracle", "mystical", "prophetic", "ancient"],
         previewUrl: "/CoreLandingPages/AgencyPortfolio/THEORACLE",
         code: {
-            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/TheOracle.tsx"),
-            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/TheOracle.jsx"),
+            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/THEORACLE.tsx"),
+            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/THEORACLE.jsx"),
         },
         usageCode: {
             tsx: getCode("src/app/(routes)/CoreLandingPages/AgencyPortfolio/THEORACLE/page.tsx"),
@@ -1011,8 +1011,8 @@ export const agencyPortfolioComponents: Component[] = [
         tags: ["sketchbook", "hand-drawn", "artistic", "creative"],
         previewUrl: "/CoreLandingPages/AgencyPortfolio/THESKETCHBOOK",
         code: {
-            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/TheSketchbook.tsx"),
-            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/TheSketchbook.jsx"),
+            tsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/tsx/THESKETCHBOOK.tsx"),
+            jsx: getCode("src/components/CoreLandingPages/AgencyPortfolio/jsx/THESKETCHBOOK.jsx"),
         },
         usageCode: {
             tsx: getCode("src/app/(routes)/CoreLandingPages/AgencyPortfolio/THESKETCHBOOK/page.tsx"),

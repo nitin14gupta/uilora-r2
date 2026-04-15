@@ -7,8 +7,7 @@ import path from "path";
  */
 export function getCode(relativePath: string): string {
     try {
-        const workspaceRoot = path.join(process.cwd(), "..");
-        const MobilePath = path.join(workspaceRoot, "app");
+        const MobilePath = process.env.MOBILE_SOURCE_PATH || path.join(process.cwd(), "..", "app");
         const filePath = path.join(MobilePath, relativePath);
 
         // Check if file exists

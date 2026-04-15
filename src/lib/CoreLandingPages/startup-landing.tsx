@@ -319,11 +319,11 @@ export const startupLandingComponents: Component[] = [
     tags: ["loo", "unique", "distinctive", "creative"],
     previewUrl: "/CoreLandingPages/StartupLandingPages/loo",
     code: {
-      tsx: getCode("src/components/CoreLandingPages/StartupLandingPages/tsx/Loo.tsx"),
-      jsx: getCode("src/components/CoreLandingPages/StartupLandingPages/jsx/Loo.jsx"),
+      tsx: getCode("src/components/CoreLandingPages/StartupLandingPages/tsx/loo.tsx"),
+      jsx: getCode("src/components/CoreLandingPages/StartupLandingPages/jsx/loo.jsx"),
     },
     usageCode: {
-      tsx: getCode("src/app/(routes)/CoreLandingPages/StartupLandingPages/Loo/page.tsx"),
+      tsx: getCode("src/app/(routes)/CoreLandingPages/StartupLandingPages/loo/page.tsx"),
     },
     dependencies: ["next", "framer-motion"],
     props: [
@@ -419,11 +419,11 @@ export const startupLandingComponents: Component[] = [
     tags: ["sketch", "hand-drawn", "organic", "artistic"],
     previewUrl: "/CoreLandingPages/StartupLandingPages/sketch",
     code: {
-      tsx: getCode("src/components/CoreLandingPages/StartupLandingPages/tsx/Sketch.tsx"),
-      jsx: getCode("src/components/CoreLandingPages/StartupLandingPages/jsx/Sketch.jsx"),
+      tsx: getCode("src/components/CoreLandingPages/StartupLandingPages/tsx/sketch.tsx"),
+      jsx: getCode("src/components/CoreLandingPages/StartupLandingPages/jsx/sketch.jsx"),
     },
     usageCode: {
-      tsx: getCode("src/app/(routes)/CoreLandingPages/StartupLandingPages/Sketch/page.tsx"),
+      tsx: getCode("src/app/(routes)/CoreLandingPages/StartupLandingPages/sketch/page.tsx"),
     },
     dependencies: ["next", "framer-motion"],
     props: [

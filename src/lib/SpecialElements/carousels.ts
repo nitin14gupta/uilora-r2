@@ -1,5 +1,6 @@
 import { getCode } from "../getCode";
 import { Component } from "../types";
+
 export const carouselComponents: Component[] = [
     {
         id: "depth",
@@ -18,117 +19,29 @@ export const carouselComponents: Component[] = [
         },
         dependencies: ["framer-motion", "lucide-react"],
         props: [
-            { name: "images", type: "string[]", default: "[url1, url2, ...]", description: "Array of image URLs to display in the carousel." },
-            { name: "labels", type: "string[]", default: "[]", description: "Optional array of labels for each slide (overrides default 'SLIDE 0X' format)." },
+            { name: "images", type: "string[]", default: "[url1, url2, ...]", description: "Array of image URLs to display." },
+            { name: "labels", type: "string[]", default: "[]", description: "Optional labels for each slide." },
             { name: "defaultIndex", type: "number", default: "0", description: "Initial active slide index." },
-            { name: "backgroundColor", type: "string", default: "transparent", description: "Background color of the component (hex, rgb, or hsl)." },
-            { name: "containerBgColor", type: "string", default: "#000000", description: "Background color of the carousel container (hex, rgb, or hsl)." },
-            { name: "borderRadius", type: "string", default: "1rem", description: "Border radius of the container (CSS value)." },
-            { name: "imageOpacity", type: "number", default: "0.6", description: "Opacity of background images (0-1)." },
-            { name: "textColor", type: "string", default: "#ffffff", description: "Color of slide labels (hex, rgb, or hsl)." },
-            { name: "buttonBgColor", type: "string", default: "rgba(255,255,255,0.2)", description: "Background color of navigation buttons (hex, rgb, or hsl)." },
-            { name: "buttonHoverBgColor", type: "string", default: "rgba(255,255,255,0.4)", description: "Background color of buttons on hover (hex, rgb, or hsl)." },
-            { name: "buttonTextColor", type: "string", default: "#ffffff", description: "Text/icon color of buttons (hex, rgb, or hsl)." },
-            { name: "buttonBorderRadius", type: "string", default: "9999px", description: "Border radius of buttons (CSS value)." },
-            { name: "transitionDuration", type: "number", default: "0.8", description: "Duration of slide transitions in seconds." },
-            { name: "height", type: "string", default: "16rem", description: "Height of the carousel container (CSS value)." },
-            { name: "maxWidth", type: "string", default: "28rem", description: "Maximum width of the carousel container (CSS value)." },
+            { name: "containerBgColor", type: "string", default: "#000000", description: "Background color of the container." },
+            { name: "height", type: "string", default: "16rem", description: "Height of the carousel container." },
+            { name: "maxWidth", type: "string", default: "28rem", description: "Maximum width of the container." },
         ],
-        whenToUse: "Excellent for luxury brand landing pages, cinematic portfolios, and Next.js applications that want a meaningful 'Depth' aesthetic. Use this carousel to provide immersive image exploration with subtle parallax layers and glow effects.",
-        bestPractices: "Maintain consistent spacing within your design system by using it for high-fidelity focal imagery. Follow React best practices by pairing this with sharp, technical typography. Optimize for performance by managed the image opacity renders.",
-        whyMatters: "Depth-based aesthetics communicate technical reliability, clarity, and timeless craft. This production-ready UI template helpsคุณ build an interface that feels organized and professional, reflecting a brand identity rooted in design purity.",
+        whenToUse: "Excellent for luxury brand landing pages, cinematic portfolios, and applications that want an immersive depth aesthetic.",
+        bestPractices: "Use high-contrast imagery to maximize the parallax depth effect. Keep label text short and bold.",
+        whyMatters: "Depth-based parallax creates visual hierarchy that flat carousels cannot achieve — it signals premium craft to the viewer.",
         faqs: [
-            { question: "How does the 'Depth' work?", answer: "The component uses localized scale offsets and layout-id transitions to move the background layers at different speeds, creating a high-fidelity 'opening' 3D effect." },
-            { question: "Can I adjust the parallax intensity?", answer: "Absolutely, you can customize the Framer Motion transition properties to adjust how dramatically the images scale and move during scrolling." },
-            { question: "Is it mobile responsive?", answer: "The depth scales and typographic scales adapt for mobile, ensuring the objective clarity remains consistent on high-density mobile screens." }
-        ],
-    },
-    {
-        id: "coverflow",
-        name: "Coverflow",
-        description: "3D coverflow carousel with perspective transforms.",
-        category: "Special Elements",
-        installType: "cli",
-        tags: ["carousel", "coverflow", "3d", "perspective"],
-        previewUrl: "/SpecialElements/Carousels/Coverflow",
-        code: {
-            tsx: getCode("src/components/SpecialElements/Carousels/tsx/CarouselCoverflow.tsx"),
-            jsx: getCode("src/components/SpecialElements/Carousels/jsx/CarouselCoverflow.jsx"),
-        },
-        usageCode: {
-            tsx: getCode("src/app/(routes)/SpecialElements/Carousels/Coverflow/page.tsx")
-        },
-        dependencies: ["framer-motion", "lucide-react"],
-        props: [
-            { name: "images", type: "string[]", default: "[url1, url2, url3]", description: "Array of image URLs to display in the carousel." },
-            { name: "defaultActive", type: "number", default: "1", description: "Initial active slide index." },
-            { name: "backgroundColor", type: "string", default: "transparent", description: "Background color of the component (hex, rgb, or hsl)." },
-            { name: "imageBorderColor", type: "string", default: "#ffffff", description: "Border color of carousel images (hex, rgb, or hsl)." },
-            { name: "imageBorderWidth", type: "number", default: "4", description: "Border width of carousel images in pixels." },
-            { name: "imageShadowColor", type: "string", default: "rgba(0,0,0,0.5)", description: "Shadow color of carousel images (hex, rgb, or hsl)." },
-            { name: "activeScale", type: "number", default: "1", description: "Scale of the active slide." },
-            { name: "inactiveScale", type: "number", default: "0.8", description: "Scale of inactive slides." },
-            { name: "activeOpacity", type: "number", default: "1", description: "Opacity of the active slide (0-1)." },
-            { name: "inactiveOpacity", type: "number", default: "0.5", description: "Opacity of inactive slides (0-1)." },
-            { name: "rotationAngle", type: "number", default: "45", description: "Rotation angle for inactive slides in degrees." },
-            { name: "offsetDistance", type: "number", default: "40", description: "Horizontal offset distance between slides in pixels." },
-            { name: "height", type: "string", default: "12rem", description: "Height of carousel images (CSS value)." },
-            { name: "width", type: "string", default: "12rem", description: "Width of carousel images (CSS value)." },
-            { name: "borderRadius", type: "string", default: "0.75rem", description: "Border radius of carousel images (CSS value)." },
-        ],
-        whenToUse: "Ideal for edges fashion editorials, technical archives, and Next.js platforms that want a dramatic 'Coverflow' aesthetic. Use this layout to communicate structural scale and digital craft through 3D perspective transforms.",
-        bestPractices: "Maintain consistent spacing within your design system by using it for focal content blocks. Follow React best practices by pairing it with bold, professional typography. Optimize for performance by managed the perspective renders.",
-        whyMatters: "Coverflow-based layouts communicate power, mystery, and structural honesty. This production-ready UI template helpsคุณ build an interface that feels authoritative and solid, breaking the 'standard' flat list rules.",
-        faqs: [
-            { question: "Why 'Coverflow'?", answer: "The component features localized 3D rotation and scaling that allow users to 'flip' through content, simulating the raw structural honesty of physical media archives." },
-            { question: "Can I adjust colors?", answer: "Yes, both the primary 'imageBorderColor' and background colors are fully configurable allowedคุณ to create 'Industrial' or 'Cyber' agency effects." },
-            { question: "Is it mobile responsive?", answer: "The 3D spans and rotation angles adapt dynamically for mobile, Ensuring the bold narrative remains impactful and structural on small screens." }
-        ],
-    },
-    {
-        id: "panorama",
-        name: "Panorama",
-        description: "Draggable panorama carousel with smooth scrolling.",
-        category: "Special Elements",
-        installType: "cli",
-        tags: ["carousel", "panorama", "drag", "scroll"],
-        previewUrl: "/SpecialElements/Carousels/Panorama",
-        code: {
-            tsx: getCode("src/components/SpecialElements/Carousels/tsx/CarouselPanorama.tsx"),
-            jsx: getCode("src/components/SpecialElements/Carousels/jsx/CarouselPanorama.jsx"),
-        },
-        usageCode: {
-            tsx: getCode("src/app/(routes)/SpecialElements/Carousels/Panorama/page.tsx")
-        },
-        dependencies: ["framer-motion", "lucide-react"],
-        props: [
-            { name: "images", type: "string[]", default: "[url1, url2, ...]", description: "Array of image URLs to display in the carousel." },
-            { name: "backgroundColor", type: "string", default: "transparent", description: "Background color of the component (hex, rgb, or hsl)." },
-            { name: "borderRadius", type: "string", default: "1rem", description: "Border radius of the container (CSS value)." },
-            { name: "imageBorderRadius", type: "string", default: "0.75rem", description: "Border radius of carousel images (CSS value)." },
-            { name: "imageHeight", type: "string", default: "16rem", description: "Height of carousel images (CSS value)." },
-            { name: "imageWidth", type: "string", default: "12rem", description: "Width of carousel images (CSS value)." },
-            { name: "imageGap", type: "string", default: "1rem", description: "Gap between carousel images (CSS value)." },
-            { name: "dragConstraints", type: "{left: number, right: number}", default: "{left: -500, right: 0}", description: "Drag constraints for horizontal scrolling." },
-            { name: "cursorGrab", type: "string", default: "grab", description: "Cursor style when hovering (CSS cursor value)." },
-            { name: "cursorGrabbing", type: "string", default: "grabbing", description: "Cursor style when dragging (CSS cursor value)." },
-        ],
-        whenToUse: "Excellent for wide-format photography, technical archives, and Next.js applications that want an organic 'Panorama' aesthetic. Use this layout to communicate power and digital intelligence through smooth, draggable image streams.",
-        bestPractices: "Maintain scalable component architecture by pairing this with sharp, technical typography. Follow React best practices by using Framer Motion for the drag physics. Optimize for performance by managed the image gap renders.",
-        whyMatters: "Panorama-based layouts communicate technical authority, sophistication, and digital craft. This production-ready UI template helpsคุณ build an interface that feels organized and high-end, adding a unique 'Studio' signatures to your brand.",
-        faqs: [
-            { question: "How does drag work?", answer: "The component features localized drag-constraints and spring physics to allow users to smoothly 'scrub' through the project archive with high-fidelity scrubbing interactions." },
-            { question: "Are colors dynamic?", answer: "Absolutely, you can adjust both the primary `backgroundColor` and specific borders to match your brand's specific high-intensity palette." },
-            { question: "Is it mobile responsive?", answer: "The image widths and typographic scales adapt for mobile, ensuring the bold narrative remains impactful and structural on small screens." }
+            { question: "How does the depth effect work?", answer: "Layers scale and translate at different rates during transitions, creating the illusion of spatial depth." },
+            { question: "Can I adjust the effect intensity?", answer: "Yes — customize the Framer Motion transition properties to control scale and translation distances." },
+            { question: "Is it mobile responsive?", answer: "Yes, the layout adapts for smaller screens while preserving the depth effect." }
         ],
     },
     {
         id: "infinite",
         name: "Infinite Loop",
-        description: "Seamless infinite scrolling carousel.",
+        description: "Seamless infinite scrolling carousel with auto-play.",
         category: "Special Elements",
         installType: "cli",
-        tags: ["carousel", "infinite", "loop", "scroll"],
+        tags: ["carousel", "infinite", "loop", "scroll", "marquee"],
         previewUrl: "/SpecialElements/Carousels/Infinite",
         code: {
             tsx: getCode("src/components/SpecialElements/Carousels/tsx/CarouselInfinite.tsx"),
@@ -137,36 +50,31 @@ export const carouselComponents: Component[] = [
         usageCode: {
             tsx: getCode("src/app/(routes)/SpecialElements/Carousels/Infinite/page.tsx")
         },
-        dependencies: ["framer-motion", "lucide-react"],
+        dependencies: ["framer-motion"],
         props: [
-            { name: "images", type: "string[]", default: "[url1, url2, ...]", description: "Array of image URLs to display in the carousel." },
-            { name: "backgroundColor", type: "string", default: "transparent", description: "Background color of the component (hex, rgb, or hsl)." },
-            { name: "imageBgColor", type: "string", default: "#e4e4e7", description: "Background color of image containers (hex, rgb, or hsl)." },
-            { name: "imageBorderRadius", type: "string", default: "0.5rem", description: "Border radius of carousel images (CSS value)." },
-            { name: "imageOpacity", type: "number", default: "0.8", description: "Opacity of carousel images (0-1)." },
-            { name: "imageGap", type: "string", default: "0.5rem", description: "Gap between carousel images (CSS value)." },
-            { name: "imageHeight", type: "string", default: "6rem", description: "Height of carousel images (CSS value)." },
-            { name: "imageWidth", type: "string", default: "8rem", description: "Width of carousel images (CSS value)." },
-            { name: "animationDuration", type: "number", default: "20", description: "Duration of the infinite scroll animation in seconds." },
-            { name: "maskGradient", type: "string", default: "linear-gradient(to_right,transparent,black_20%,black_80%,transparent)", description: "CSS mask gradient for fade edges." },
-            { name: "maxWidth", type: "string", default: "32rem", description: "Maximum width of the carousel container (CSS value)." },
+            { name: "images", type: "string[]", default: "[url1, url2, ...]", description: "Array of image URLs to loop." },
+            { name: "animationDuration", type: "number", default: "20", description: "Duration of one complete loop in seconds." },
+            { name: "imageHeight", type: "string", default: "6rem", description: "Height of each image card." },
+            { name: "imageWidth", type: "string", default: "8rem", description: "Width of each image card." },
+            { name: "imageGap", type: "string", default: "0.5rem", description: "Gap between image cards." },
+            { name: "maxWidth", type: "string", default: "32rem", description: "Maximum width of the carousel." },
         ],
-        whenToUse: "Ideal for logo walls, sponsor strips, and Next.js platforms that want an organic 'Infinite Loop' aesthetic. Use this layout for an engaging experience where content feels 'Moving' and 'Drafted' by physical film borders.",
-        bestPractices: "Maintain scalable component architecture by keeping the scroll speed balanced. Follow React best practices by pairing this with bold, technical typography. Optimize for performance by managed the marquee intensity.",
-        whyMatters: "Infinite-loop animations create a sense of digital 'Authenticity' and human touch. This production-ready UI template helpsคุณ build an interface that feels alive and 'Drafted', adding a unique signatures to your brand structure.",
+        whenToUse: "Ideal for logo walls, sponsor strips, image galleries, and any context where content should feel continuously in motion.",
+        bestPractices: "Use a consistent aspect ratio for all images. Slower animation speeds work better for readability; faster speeds work for abstract visual texture.",
+        whyMatters: "Infinite loops create a sense of abundance and momentum — they communicate an active, living brand.",
         faqs: [
-            { question: "How does 'Loop' work?", answer: "The component features seamless horizontal scrolling that clones items, allowedคุณ to create high-fidelity 'infinite' visual flows without visual breaks." },
-            { question: "Can I adjust colors?", answer: "Yes, both the primary background and specific borders are fully configurable to match your brand's specific intensity." },
-            { question: "Is it mobile responsive?", answer: "The horizontal flow and typographic scales adapt for mobile, ensuring the 'Draft' narrative remains impactful and structural on small screens." }
+            { question: "How does the seamless loop work?", answer: "Images are duplicated and the strip repositions silently when it reaches the end, creating a perfect infinite scroll." },
+            { question: "Can I pause on hover?", answer: "Yes — add onMouseEnter/Leave handlers to pause and resume the Framer Motion animation controls." },
+            { question: "Is it mobile responsive?", answer: "Yes — the horizontal flow adapts naturally to any container width." }
         ],
     },
     {
         id: "story",
         name: "Vertical Story",
-        description: "Vertical story-style carousel with progress indicators.",
+        description: "Vertical story-style carousel with auto-advancing progress indicators.",
         category: "Special Elements",
         installType: "cli",
-        tags: ["carousel", "story", "vertical", "progress"],
+        tags: ["carousel", "story", "vertical", "progress", "instagram"],
         previewUrl: "/SpecialElements/Carousels/Story",
         code: {
             tsx: getCode("src/components/SpecialElements/Carousels/tsx/CarouselStory.tsx"),
@@ -175,34 +83,216 @@ export const carouselComponents: Component[] = [
         usageCode: {
             tsx: getCode("src/app/(routes)/SpecialElements/Carousels/Story/page.tsx")
         },
-        dependencies: ["framer-motion", "lucide-react"],
+        dependencies: ["framer-motion"],
         props: [
-            { name: "images", type: "string[]", default: "[url1, url2, ...]", description: "Array of image URLs to display in the carousel." },
-            { name: "labels", type: "{title?: string, subtitle?: string}[]", default: "[]", description: "Optional array of labels with title and subtitle for each slide." },
-            { name: "backgroundColor", type: "string", default: "transparent", description: "Background color of the component (hex, rgb, or hsl)." },
-            { name: "containerBgColor", type: "string", default: "#000000", description: "Background color of the carousel container (hex, rgb, or hsl)." },
-            { name: "borderRadius", type: "string", default: "1rem", description: "Border radius of the container (CSS value)." },
-            { name: "progressBarBgColor", type: "string", default: "rgba(255,255,255,0.3)", description: "Background color of progress bars (hex, rgb, or hsl)." },
-            { name: "progressBarFillColor", type: "string", default: "#ffffff", description: "Fill color of progress bars (hex, rgb, or hsl)." },
-            { name: "progressBarHeight", type: "string", default: "0.25rem", description: "Height of progress bars (CSS value)." },
-            { name: "progressBarGap", type: "string", default: "0.25rem", description: "Gap between progress bars (CSS value)." },
-            { name: "titleColor", type: "string", default: "#ffffff", description: "Color of slide titles (hex, rgb, or hsl)." },
-            { name: "subtitleColor", type: "string", default: "rgba(255,255,255,0.7)", description: "Color of slide subtitles (hex, rgb, or hsl)." },
-            { name: "overlayGradientFrom", type: "string", default: "rgba(0,0,0,0.8)", description: "Start color of the overlay gradient (hex, rgb, or hsl)." },
-            { name: "overlayGradientTo", type: "string", default: "transparent", description: "End color of the overlay gradient (hex, rgb, or hsl)." },
+            { name: "images", type: "string[]", default: "[url1, url2, ...]", description: "Array of image URLs to display." },
+            { name: "labels", type: "{title?: string, subtitle?: string}[]", default: "[]", description: "Optional labels per slide." },
             { name: "autoPlayInterval", type: "number", default: "100", description: "Auto-play interval in milliseconds." },
             { name: "progressIncrement", type: "number", default: "2", description: "Progress increment per interval (percentage)." },
-            { name: "height", type: "string", default: "24rem", description: "Height of the carousel container (CSS value)." },
-            { name: "width", type: "string", default: "16rem", description: "Width of the carousel container (CSS value)." },
+            { name: "height", type: "string", default: "24rem", description: "Height of the carousel." },
+            { name: "width", type: "string", default: "16rem", description: "Width of the carousel." },
         ],
-        whenToUse: "Excellent for street-style blogs, edgy agencies, and Next.js applications that want an energetic 'Story' aesthetic. Use this layout for an engaging experience where content feels 'Mailed' and 'Drafted' by physical film borders.",
-        bestPractices: "Follow React best practices by pairing this with bold, professional typography. Maintain consistent spacing within your design system by keeping the progress bars aligned. Optimize for performance by managed the image-scaling intensity.",
-        whyMatters: "Social-media animations communicate energy, flow, and digital momentum. This production-ready UI template helpsคุณ build an interface that feels alive and energetic, adding a distinct 'Moving' signature to your brand.",
+        whenToUse: "Perfect for social-media style story viewers, onboarding flows, and portfolio showcases that benefit from the Instagram story format.",
+        bestPractices: "Keep slide count to 4-6 for optimal UX. Use portrait images that fill the card. Ensure text labels are short enough to read before auto-advance.",
+        whyMatters: "The story format is one of the most recognizable and engaging UI patterns. It creates urgency and momentum that drives users through content.",
         faqs: [
-            { question: "How does progress work?", answer: "The component features localized progress-bars spanning the top of the view, allowedคุณ to track the project narrative with high-fidelity visual timing cues." },
-            { question: "Can I adjust timing?", answer: "Absolutely, you can adjust both the `autoPlayInterval` and the primary 'backgroundColor' (gradient or solid) to match your brand's specific high-intensity palette." },
-            { question: "Is it mobile responsive?", answer: "The vertical flow and typographic scales adapt for mobile, ensuring the bold narrative remains impactful and structural on small screens." }
+            { question: "How does the progress bar work?", answer: "Each progress bar fills over time using a setInterval. When full, the next slide automatically advances." },
+            { question: "Can I tap to advance?", answer: "Yes — clicking either the left or right half of the card advances or goes back, following the Instagram story convention." },
+            { question: "Is it mobile responsive?", answer: "Yes — the portrait format is inherently mobile-friendly." }
         ],
-    }
+    },
+    {
+        id: "focus-card",
+        name: "Focus Card",
+        description: "Centered 3-card carousel — active card enlarged and elevated with serif italic label and counter.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["carousel", "focus", "centered", "editorial", "card"],
+        previewUrl: "/SpecialElements/Carousels/FocusCard",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Carousels/tsx/CarouselFocusCard.tsx"),
+            jsx: getCode("src/components/SpecialElements/Carousels/jsx/CarouselFocusCard.jsx"),
+        },
+        usageCode: {
+            tsx: getCode("src/app/(routes)/SpecialElements/Carousels/FocusCard/page.tsx")
+        },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [
+            { name: "items", type: "FocusItem[]", default: "DEFAULT_ITEMS (12 items)", description: "Array of items with id, image URL, label, and category." },
+            { name: "defaultActive", type: "number", default: "5", description: "Index of the initially active card." },
+            { name: "bgColor", type: "string", default: "#e8e8ea", description: "Background color of the carousel container." },
+        ],
+        whenToUse: "Use for editorial showcases, theme selectors, or any interface where a curated visual selection needs to feel intentional. The serif italic labels add a refined, magazine-like character.",
+        bestPractices: "Use images with strong focal points that read well at portrait aspect ratio. Keep labels short — 1-2 words maximum for the italic serif overlay.",
+        whyMatters: "The centered focus pattern with counter (06/12) communicates curation and depth, implying a rich catalog behind the visible selection.",
+        faqs: [
+            { question: "How are the 3 cards positioned?", answer: "Three items render simultaneously — active at center with scale 1.0, adjacent cards at scale 0.80 and ±224px x-offset, using Framer Motion spring transitions." },
+            { question: "Can I click side cards to navigate?", answer: "Yes — clicking either side card advances in that direction." },
+            { question: "How do I change the label font?", answer: "The label uses font-family Georgia (serif) with italic style. Pass a custom fontFamily inline or override the style in your own wrapper." }
+        ],
+    },
+    {
+        id: "travel-cards",
+        name: "Travel Cards",
+        description: "Tall portrait card carousel with metadata overlay — title, duration, and star rating per card.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["carousel", "cards", "travel", "portrait", "metadata"],
+        previewUrl: "/SpecialElements/Carousels/TravelCards",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Carousels/tsx/CarouselTravelCards.tsx"),
+            jsx: getCode("src/components/SpecialElements/Carousels/jsx/CarouselTravelCards.jsx"),
+        },
+        usageCode: {
+            tsx: getCode("src/app/(routes)/SpecialElements/Carousels/TravelCards/page.tsx")
+        },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [
+            { name: "items", type: "TravelItem[]", default: "DEFAULT_ITEMS (6 items)", description: "Array of items with id, image URL, title, days, and rating." },
+            { name: "defaultActive", type: "number", default: "1", description: "Index of the initially active card." },
+            { name: "accentColor", type: "string", default: "#14b8a6", description: "Accent color for the active card border and dot indicator." },
+        ],
+        whenToUse: "Perfect for travel apps, booking platforms, product showcases, and any interface with tall portrait images and per-item metadata.",
+        bestPractices: "Use portrait images (3:4 ratio) for best results. Keep titles concise. The accentColor creates a subtle border on the active card — choose it to match your brand.",
+        whyMatters: "The portrait card format maximizes visual impact for each item while the metadata overlay provides all key information without additional UI elements.",
+        faqs: [
+            { question: "How does the center card scale work?", answer: "The active card scales to 1.05x, side cards to 0.86x. All use spring physics for natural-feeling transitions." },
+            { question: "Can I click side cards to navigate?", answer: "Yes — clicking either side card navigates in that direction." },
+            { question: "Can I add more metadata fields?", answer: "Yes — extend the TravelItem interface and add more spans inside the metadata overlay div." }
+        ],
+    },
+    {
+        id: "tilt-gallery",
+        name: "Tilt Gallery",
+        description: "Editorial row of slightly tilted images that straighten and elevate on hover.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["carousel", "gallery", "tilt", "hover", "editorial"],
+        previewUrl: "/SpecialElements/Carousels/TiltGallery",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Carousels/tsx/CarouselTiltGallery.tsx"),
+            jsx: getCode("src/components/SpecialElements/Carousels/jsx/CarouselTiltGallery.jsx"),
+        },
+        usageCode: {
+            tsx: getCode("src/app/(routes)/SpecialElements/Carousels/TiltGallery/page.tsx")
+        },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [
+            { name: "items", type: "TiltItem[]", default: "DEFAULT_ITEMS (5 items)", description: "Array of items with id, image URL, and optional caption." },
+            { name: "heading", type: "string", default: "\"Find your dream\"", description: "First line of the heading." },
+            { name: "headingAccent", type: "string", default: "\"aesthetic\"", description: "Second line of the heading (bold, accented)." },
+            { name: "subheading", type: "string", default: "\"Explore collections...\"", description: "Descriptive subtext next to the heading." },
+            { name: "accentColor", type: "string", default: "#166534", description: "Color of the bold accent heading line." },
+            { name: "bgColor", type: "string", default: "#f0ede8", description: "Background color of the full-screen container." },
+        ],
+        whenToUse: "Use for portfolio showcases, editorial features, mood boards, and any context that benefits from a casual, organic gallery feel rather than a rigid carousel.",
+        bestPractices: "Use images with varied colors so the row has visual rhythm. Keep to 4-6 images for optimal layout. The tilt angles are pre-set for visual balance.",
+        whyMatters: "Tilted cards break the sterile grid pattern — they communicate creativity and human curation, signaling a design sensibility beyond the default.",
+        faqs: [
+            { question: "How does the hover interaction work?", answer: "Each card uses Framer Motion animate to tween rotate to 0, scale to 1.08, and y to -10 on mouseenter, reverting on mouseleave." },
+            { question: "Can I customize the tilt angles?", answer: "Yes — the TILTS array at the top of the component defines each card's default rotation. Edit it to set your preferred angles." },
+            { question: "Is there a click/navigation interaction?", answer: "No traditional next/prev — this component is designed as a gallery display with hover as the primary interaction." }
+        ],
+    },
+    {
+        id: "perspective-3d",
+        name: "3D Perspective",
+        description: "3D Y-axis rotation carousel — side cards fold back in perspective with a CTA button for the active card.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["carousel", "3d", "perspective", "rotation", "product"],
+        previewUrl: "/SpecialElements/Carousels/Perspective3D",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Carousels/tsx/Carousel3DPerspective.tsx"),
+            jsx: getCode("src/components/SpecialElements/Carousels/jsx/Carousel3DPerspective.jsx"),
+        },
+        usageCode: {
+            tsx: getCode("src/app/(routes)/SpecialElements/Carousels/Perspective3D/page.tsx")
+        },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [
+            { name: "items", type: "PerspectiveItem[]", default: "DEFAULT_ITEMS (5 items)", description: "Array of items with id, image URL, title, and optional subtitle." },
+            { name: "defaultActive", type: "number", default: "2", description: "Index of the initially active card." },
+            { name: "heading", type: "string", default: "\"Choose Your Piece\"", description: "Main heading displayed above the carousel." },
+            { name: "subheading", type: "string", default: "\"Explore our curated collection\"", description: "Subtitle below the heading." },
+            { name: "ctaLabel", type: "string", default: "\"Add To Cart\"", description: "Label for the action button below the active card." },
+            { name: "accentColor", type: "string", default: "#166534", description: "Color for the CTA button border and text." },
+            { name: "bgColor", type: "string", default: "#f0f0f6", description: "Background color of the container." },
+        ],
+        whenToUse: "Perfect for product carousels, collection showcases, and portfolio features where the 3D depth effect communicates premium presentation quality.",
+        bestPractices: "Use square or portrait images for best card proportions. Ensure headings clearly describe the collection. The CTA button drives conversion — make the label action-oriented.",
+        whyMatters: "Y-axis rotation creates a genuine sense of spatial depth that flat carousels cannot replicate. It makes the center item feel definitively 'selected' and worth acting on.",
+        faqs: [
+            { question: "How does the Y-rotation work?", answer: "Side cards use rotateY(±42deg) with transformOrigin set to the inner edge, creating a hinge effect. The CSS perspective: 1000px on the parent enables 3D space." },
+            { question: "Can I click side cards to navigate?", answer: "Yes — clicking either side card navigates in that direction, just like a standard carousel." },
+            { question: "How does the heart/like button work?", answer: "It's local state (useState) — wire it to your actual wishlist/favorites logic as needed." }
+        ],
+    },
+    {
+        id: "curve-arc",
+        name: "Curve Arc",
+        description: "Wide 3D arc carousel — 5 cards arranged on a curved plane with depth-fading side cards and a CTA action button.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["carousel", "3d", "arc", "curve", "perspective", "product"],
+        previewUrl: "/SpecialElements/Carousels/CurveArc",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Carousels/tsx/CarouselCurveArc.tsx"),
+            jsx: getCode("src/components/SpecialElements/Carousels/jsx/CarouselCurveArc.jsx"),
+        },
+        usageCode: {
+            tsx: getCode("src/app/(routes)/SpecialElements/Carousels/CurveArc/page.tsx")
+        },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [
+            { name: "items", type: "CurveItem[]", default: "DEFAULT_ITEMS (7 items)", description: "Array of items with id, image URL, title, and optional subtitle." },
+            { name: "defaultActive", type: "number", default: "3", description: "Index of the initially active card." },
+            { name: "heading", type: "string", default: "\"Choose Your Piece\"", description: "Main heading above the carousel." },
+            { name: "subheading", type: "string", default: "\"Explore our curated collection\"", description: "Subtitle below the heading." },
+            { name: "ctaLabel", type: "string", default: "\"Add To Cart\"", description: "Label for the action button." },
+            { name: "accentColor", type: "string", default: "#166534", description: "Color for heading and CTA button border." },
+        ],
+        whenToUse: "Ideal for full-width product showcases, plant/lifestyle shops, and any collection that benefits from showing multiple cards simultaneously on a dramatic curved arc.",
+        bestPractices: "Use portrait images for best card proportions. Keep 6-8 items for a rich arc with enough depth falloff. The arc is most visible on wider viewports.",
+        whyMatters: "The curved arc layout creates genuine spatial depth with 5 visible cards — far more context than a standard 3-card carousel while maintaining clear center focus.",
+        faqs: [
+            { question: "How does the arc curve work?", answer: "Each card gets a rotateY angle and z-offset based on distance from active. Cards at distance 1 rotate ±52deg at z:-100; distance 2 rotate ±68deg at z:-260." },
+            { question: "Can I click side cards to jump?", answer: "Yes — clicking distance-1 cards advances one step; clicking distance-2 cards jumps two steps." },
+            { question: "How does the heart button work?", answer: "It's local liked state — wire to your wishlist/favorites system as needed." }
+        ],
+    },
+    {
+        id: "morph-shape",
+        name: "Morph Shape",
+        description: "Organic blob carousel — the center card morphs between fluid border-radius shapes on each navigation, with side cards at slight angles.",
+        category: "Special Elements",
+        installType: "cli",
+        tags: ["carousel", "blob", "morph", "organic", "shape", "creative"],
+        previewUrl: "/SpecialElements/Carousels/MorphShape",
+        code: {
+            tsx: getCode("src/components/SpecialElements/Carousels/tsx/CarouselMorphShape.tsx"),
+            jsx: getCode("src/components/SpecialElements/Carousels/jsx/CarouselMorphShape.jsx"),
+        },
+        usageCode: {
+            tsx: getCode("src/app/(routes)/SpecialElements/Carousels/MorphShape/page.tsx")
+        },
+        dependencies: ["framer-motion", "lucide-react"],
+        props: [
+            { name: "items", type: "MorphItem[]", default: "DEFAULT_ITEMS (5 items)", description: "Array of items with id, image URL, and label." },
+            { name: "defaultActive", type: "number", default: "0", description: "Index of the initially active card." },
+            { name: "eyebrow", type: "string", default: "\"Convenient Setup\"", description: "Small uppercase label above the heading." },
+            { name: "heading", type: "string", default: "\"Hangtimes just got an upgrade.\"", description: "Main heading text." },
+            { name: "subheading", type: "string", default: "\"Games can be hosted...\"", description: "Subtitle below the heading." },
+            { name: "accentColor", type: "string", default: "#2d6a4f", description: "Color for the eyebrow label." },
+            { name: "autoPlayInterval", type: "number", default: "2000", description: "Auto-advance interval in milliseconds." },
+        ],
+        whenToUse: "Perfect for creative portfolios, art/design showcases, fashion lookbooks, and any brand identity that wants to communicate fluidity and organic creativity.",
+        bestPractices: "Use high-quality images with strong visual centers — the blob crop highlights the middle of each image. The purple default accent pairs well with nature and art photography.",
+        whyMatters: "Organic blob shapes break the visual monotony of rectangular cards — the morphing animation creates a living, breathing feel that signals premium creative craft.",
+        faqs: [
+            { question: "How does the shape morphing work?", answer: "CSS border-radius with 8 values (e.g. '62% 38% 46% 54% / 60% 44% 56% 40%') creates organic shapes. Framer Motion animates between shapes using spring physics." },
+            { question: "Can I add my own blob shapes?", answer: "Yes — edit the BLOB_SHAPES array at the top of the component with any valid 8-value CSS border-radius string." },
+            { question: "What are the side cards?", answer: "The prev/next images render as smaller, tilted blob shapes (±4 deg rotation, 0.65 opacity) on either side of the center card. Clicking them navigates." }
+        ],
+    },
 ];
-

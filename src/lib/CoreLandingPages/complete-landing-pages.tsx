@@ -198,15 +198,15 @@ export const completeLandingPageComponents: Component[] = [
     previewUrl: "/CoreLandingPages/CompleteLandingPages/DIMENSIONS",
     code: {
       tsx: getCode(
-        "src/components/CoreLandingPages/CompleteLandingPages/tsx/Dimensions.tsx"
+        "src/components/CoreLandingPages/CompleteLandingPages/tsx/DIMENSIONS.tsx"
       ),
       jsx: getCode(
-        "src/components/CoreLandingPages/CompleteLandingPages/jsx/Dimensions.jsx"
+        "src/components/CoreLandingPages/CompleteLandingPages/jsx/DIMENSIONS.jsx"
       ),
     },
     usageCode: {
       tsx: getCode(
-        "src/app/(routes)/CoreLandingPages/CompleteLandingPages/Dimensions/page.tsx"
+        "src/app/(routes)/CoreLandingPages/CompleteLandingPages/DIMENSIONS/page.tsx"
       ),
     },
     dependencies: ["next", "framer-motion"],
